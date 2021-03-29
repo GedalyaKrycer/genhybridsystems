@@ -1,0 +1,62 @@
+@use "./_mixins" as m;
+
+// In this file:
+// 1. Base Elements
+// 2. Class Font Styles
+
+
+//1. Base Elements
+h1 {
+  @include m.playfairFontStack;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 114%;
+
+  @include m.smMinBreakPoint {
+    font-size: 86px;
+  }
+}
+
+
+h2 {
+  @include m.playfairFontStack;
+  line-height: 114%;
+  font-weight: normal;
+  font-size: 32px;
+
+  @include m.smMinBreakPoint {
+    font-size: 50px;
+  }
+}
+
+h3 {
+  @include m.playfairFontStack;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 35px;
+}
+
+h4 {
+  @include m.poppinsFontStack;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+p {
+  @include m.poppinsFontStack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+// 2. Class Font Styles
+.body-text--large {
+  @include m.poppinsFontStack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
