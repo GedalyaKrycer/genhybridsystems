@@ -1,0 +1,87 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+
+.temp-logo {
+  padding: 7px 32px;
+  font-size: 10px;
+  background-color: aliceblue;
+  width: 96px;
+
+  @include m.smMinBreakPoint {
+    padding: 10px 55px;
+    font-size: 20px;
+    width: 160px;
+  }
+}
+
+.navBar {
+  display: grid;
+  padding: 16px 20px;
+  max-width: v.$screen-full;
+  margin: 0 auto;
+
+  @include m.smMinBreakPoint {
+    grid-template-columns: 160px 280px 1fr;
+    grid-column-gap: 30px;
+    align-items: center;
+  }
+}
+
+.navbar__links {
+  list-style: none;
+  font-size: 28px;
+  padding: 0;
+
+  @include m.smMinBreakPoint {
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    grid-column-gap: 16px;
+    font-size: 16px;
+  }
+
+  li {
+    padding: 12px 0 16px 0;
+    border-bottom: 2px solid v.$primaryDark2;
+
+    @include m.smMinBreakPoint {
+      border-bottom: none;
+    }
+  }
+
+  a {
+    transition: 0.3s ease-in-out;
+    color: v.$highlight;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover {
+    color: v.$primary;
+  }
+}
+
+.navbar__social-container {
+ display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 20px;
+  justify-content: space-around;
+  align-content: center;
+
+  @include m.smMinBreakPoint {
+    display: none;
+  }
+}
+
+.navbar__cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include m.smMinBreakPoint {
+    justify-content: flex-end;
+  }
+}
+
+
