@@ -63,7 +63,7 @@ const SocialMediaIcon = props => {
                 width={props.width}
                 height={props.height}
                 className={svgStyle}
-                viewBox={props.viewBoxSize}
+                viewBox={`0 0 ${props.height} ${props.width} `}
             >
                 <path d={iconType}/>
             </svg>
