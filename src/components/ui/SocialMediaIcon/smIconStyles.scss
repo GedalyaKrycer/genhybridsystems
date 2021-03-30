@@ -1,0 +1,96 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+.social-link {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+
+  p {
+    margin: 0;
+    display: inline-block;
+    color: v.$highlight;
+    transition: color 0.3s ease-in-out;
+
+    @include m.smMinBreakPoint {
+      color: v.$secondary2
+    }
+  }
+
+  &:hover p {
+    color: v.$highlight;
+  }
+}
+
+//Icons Disabled
+.social-link--disabled {
+  pointer-events: none;
+  cursor: default;
+
+  .social-svg--disabled{
+    fill: v.$primary;
+  }
+
+}
+
+
+
+//Sidebar Icons
+.social-link--sidebar {
+
+  .social-svg--sidebar {
+    fill: v.$primary;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:hover .social-svg--sidebar {
+    fill: v.$highlight;
+  }
+
+}
+
+
+//Mobile Hero Icons
+.social-link--mobile-hero {
+
+  .social-svg--mobile-hero {
+    fill: v.$highlight;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:hover .social-svg--mobile-hero {
+    fill: v.$primary;
+  }
+
+}
+
+
+//Mobile Nav Icons
+.social-link--mobile-nav {
+
+  .social-svg--mobile-nav {
+    fill: v.$primary;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:hover .social-svg--mobile-nav {
+    fill: v.$highlight;
+  }
+
+}
+
+
+//Contact Icons
+.social-link--contact {
+
+  .social-svg--contact {
+    fill: v.$secondary2;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:hover .social-svg--contact {
+    fill: v.$highlight;
+  }
+
+}
