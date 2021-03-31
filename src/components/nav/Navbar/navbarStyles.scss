@@ -3,7 +3,7 @@
 
 .navBar {
   display: grid;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -25,6 +25,7 @@
   }
 
   @include m.smMinBreakPoint {
+    position: absolute;
     grid-template-columns: 139px 280px 1fr;
     grid-column-gap: 30px;
     align-items: center;

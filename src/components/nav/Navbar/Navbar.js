@@ -1,15 +1,17 @@
 import React, {useState, useEffect} from 'react';
-import './navbarStyles.scss'
+import './navbarStyles.scss';
 import SocialMediaIcon from "../../ui/SocialMediaIcon/SocialMediaIcon";
 import PrimaryCTAButton from "../../ui/PrimaryCTAButton/PrimaryCTAButton";
-import Logo from '../../../assets/ghs-ribbon-logo.svg'
-import useWindowDimensions from '../../../utils/useWindowDimensions'
+import Logo from '../../../assets/ghs-ribbon-logo.svg';
+import useWindowDimensions from '../../../utils/useWindowDimensions';
+import { useGHStContext } from '../../../utils/ContextProvider';
 
 const Navbar = props => {
 
     const [openMenu, setOpenMenu] = useState(false);
     const [desktopView, setDesktopView] = useState(true);
     const {width} = useWindowDimensions()
+    const {setModalOpen} = useGHStContext();
 
     useEffect(() => {
         if(width > 676) {
@@ -20,7 +22,8 @@ const Navbar = props => {
     }, [width])
 
     const mailchimpModalHandler = () => {
-        alert("Modal clicked")
+        setModalOpen(true);
+        setOpenMenu(false);
     }
 
     return (
