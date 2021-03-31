@@ -86,4 +86,4 @@ const SocialMediaIcon = props => {
     );
 }
 
-export default SocialMediaIcon;
+export default React.memo(SocialMediaIcon);
