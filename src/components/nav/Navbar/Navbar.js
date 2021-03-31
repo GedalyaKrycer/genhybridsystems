@@ -1,8 +1,14 @@
 import React from 'react';
 import './navbarStyles.scss'
 import SocialMediaIcon from "../../ui/SocialMediaIcon/SocialMediaIcon";
+import PrimaryCTAButton from "../../ui/PrimaryCTAButton/PrimaryCTAButton";
 
 const Navbar = props => {
+
+    const mailchimpModalHandler = () => {
+        alert("Modal clicked")
+    }
+
     return (
         <nav className="navBar">
             <div className="temp-logo">Logo</div>
@@ -17,7 +23,6 @@ const Navbar = props => {
                 <SocialMediaIcon
                     type={"youtube"}
                     location={"mobile-nav"}
-                    link={"https://www.youtube.com/"}
                     height={40}
                     width={28}
                     disable={false}
@@ -25,7 +30,6 @@ const Navbar = props => {
                 <SocialMediaIcon
                     type={"ticktock"}
                     location={"mobile-nav"}
-                    link={"https://www.youtube.com/"}
                     height={27}
                     width={30}
                     disable={false}
@@ -33,7 +37,6 @@ const Navbar = props => {
                 <SocialMediaIcon
                     type={"instagram"}
                     location={"mobile-nav"}
-                    link={"https://www.youtube.com/"}
                     height={31}
                     width={30}
                     disable={false}
@@ -41,7 +44,6 @@ const Navbar = props => {
                 <SocialMediaIcon
                     type={"snapchat"}
                     location={"mobile-nav"}
-                    link={"https://www.youtube.com/"}
                     height={33}
                     width={30}
                     disable={false}
@@ -49,7 +51,6 @@ const Navbar = props => {
                 <SocialMediaIcon
                     type={"twitter"}
                     location={"mobile-nav"}
-                    link={"https://www.youtube.com/"}
                     height={34}
                     width={28}
                     disable={false}
@@ -57,7 +58,6 @@ const Navbar = props => {
                 <SocialMediaIcon
                     type={"facebook"}
                     location={"mobile-nav"}
-                    link={"https://www.youtube.com/"}
                     height={30}
                     width={31}
                     disable={false}
@@ -65,7 +65,11 @@ const Navbar = props => {
             </div>
 
             <div className="navbar__cta-container">
-                <button>Test</button>
+                <PrimaryCTAButton
+                    handleClick={mailchimpModalHandler}
+                    label="get updates"
+                    icon={null}
+                />
             </div>
         </nav>
     );

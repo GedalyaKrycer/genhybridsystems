@@ -17,9 +17,12 @@
 
 .navBar {
   display: grid;
+  grid-row-gap: 40px;
   padding: 16px 20px;
   max-width: v.$screen-full;
   margin: 0 auto;
+  overflow: hidden;
+  height: 63px;
 
   @include m.smMinBreakPoint {
     grid-template-columns: 160px 280px 1fr;
@@ -32,6 +35,7 @@
   list-style: none;
   font-size: 28px;
   padding: 0;
+  margin: 0;
 
   @include m.smMinBreakPoint {
     display: grid;
@@ -51,9 +55,10 @@
 
   a {
     transition: 0.3s ease-in-out;
-    color: v.$highlight;
+    color: v.$highlight1;
     text-decoration: none;
     display: inline-block;
+    @include m.poppinsFontStack;
   }
 
   a:hover {
@@ -62,7 +67,7 @@
 }
 
 .navbar__social-container {
- display: grid;
+  display: grid;
   grid-template-columns: repeat(3, min-content);
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 20px;

@@ -1,0 +1,37 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+.primaryBtn {
+  background-color: v.$highlight1;
+  border-style: none;
+  @include m.poppinsFontStack;
+  font-size: 16px;
+  font-weight: bold;
+  color: v.$primary;
+  box-shadow: 0 4px 23px rgba(0, 0, 0, 0.45);
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  padding: 8px 18px;
+
+  @include m.smMinBreakPoint {
+    max-width: max-content;
+    padding: 4px 18px;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+    transform: scale(0.98);
+    background-color: darken(v.$highlight1, 10);
+  }
+
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+}

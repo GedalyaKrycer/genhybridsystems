@@ -10,7 +10,7 @@
     margin: 0;
     padding-left: 8px;
     display: inline-block;
-    color: v.$highlight;
+    color: v.$highlight1;
     transition: color 0.3s ease-in-out;
 
     @include m.smMinBreakPoint {
@@ -19,7 +19,7 @@
   }
 
   &:hover p {
-    color: v.$highlight;
+    color: v.$highlight1;
   }
 }
 
@@ -45,7 +45,7 @@
   }
 
   &:hover .social-svg--sidebar {
-    fill: v.$highlight;
+    fill: v.$highlight1;
   }
 
 }
@@ -55,7 +55,7 @@
 .social-link--mobile-hero {
 
   .social-svg--mobile-hero {
-    fill: v.$highlight;
+    fill: v.$highlight1;
     transition: fill 0.3s ease-in-out;
   }
 
@@ -75,7 +75,7 @@
   }
 
   &:hover .social-svg--mobile-nav {
-    fill: v.$highlight;
+    fill: v.$highlight1;
   }
 
 }
@@ -85,7 +85,7 @@
 .social-link--contact {
 
   .social-svg--contact {
-    fill: v.$highlight;
+    fill: v.$highlight1;
     transition: fill 0.3s ease-in-out;
 
     @include m.smMinBreakPoint {
@@ -94,7 +94,7 @@
   }
 
   &:hover .social-svg--contact {
-    fill: v.$highlight;
+    fill: v.$highlight1;
   }
 
 }
