@@ -1,34 +1,115 @@
 @use "../../../sassStyles/_variables" as v;
 @use "../../../sassStyles/_mixins" as m;
 
+.navBar {
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  grid-row-gap: 30px;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
 
-.temp-logo {
-  padding: 7px 32px;
-  font-size: 10px;
-  background-color: aliceblue;
-  width: 96px;
+  &--active {
+    background-color: v.$primaryDark3;
+    border-bottom: 2px solid v.$primaryDark2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0 20px 5px;
+
+    .navBar__logo {
+      width: 80px;
+    }
+  }
 
   @include m.smMinBreakPoint {
-    padding: 10px 55px;
-    font-size: 20px;
-    width: 160px;
+    grid-template-columns: 139px 280px 1fr;
+    grid-column-gap: 30px;
+    align-items: center;
+    background-color: transparent;
+    border-bottom: none;
+    max-width: v.$screen-full;
   }
 }
 
-.navBar {
-  display: grid;
-  grid-row-gap: 40px;
-  padding: 16px 20px;
-  max-width: v.$screen-full;
-  margin: 0 auto;
-  overflow: hidden;
-  height: 63px;
+.navBar__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar__logo {
+  width: 100px;
+  transition: .3s ease-in-out;
+  @include m.smMinBreakPoint {
+    width: 139px;
+  }
+}
+
+.navBar__toggle {
+  display: block;
+  position: relative;
+  background: none;
+  border: none;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  margin-top: 17px;
 
   @include m.smMinBreakPoint {
-    grid-template-columns: 160px 280px 1fr;
-    grid-column-gap: 30px;
-    align-items: center;
+    display: none;
   }
+
+  &-lines-1,
+  &-lines-2,
+  &-lines-3 {
+    background-color: v.$highlight1;
+    position: absolute;
+    height: 4px;
+    right: 0;
+    transition: 0.1s ease-in-out;
+  }
+
+  &-lines-1 {
+    width: 34px;
+    top: 2px;
+  }
+
+  &-lines-2 {
+    width: 22px;
+    top: 16px;
+  }
+
+  &-lines-3 {
+    width: 28px;
+    top: 29px;
+  }
+
+  .open-menu &-lines-1 {
+    transform: rotate(45deg) translate(9px, 9px);
+  }
+
+  .open-menu &-lines-2 {
+    opacity: 0;
+    transform: translateX(-9px);
+  }
+
+  .open-menu &-lines-3 {
+    transform: rotate(-45deg) translate(10px, -9px);
+    width: 34px;
+  }
+
+
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .navbar__links {
@@ -36,6 +117,7 @@
   font-size: 28px;
   padding: 0;
   margin: 0;
+  transition: opacity .2s .2s ease-in-out;
 
   @include m.smMinBreakPoint {
     display: grid;
@@ -46,7 +128,7 @@
 
   li {
     padding: 12px 0 16px 0;
-    border-bottom: 2px solid v.$primaryDark2;
+    border-bottom: 3px solid v.$primaryDark2;
 
     @include m.smMinBreakPoint {
       border-bottom: none;
@@ -73,6 +155,7 @@
   grid-row-gap: 20px;
   justify-content: space-around;
   align-content: center;
+  transition: opacity .2s .2s ease-in-out;
 
   @include m.smMinBreakPoint {
     display: none;
@@ -83,10 +166,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+  transition: opacity .2s .2s ease-in-out;
 
   @include m.smMinBreakPoint {
     justify-content: flex-end;
+    margin-bottom: 0;
   }
 }
 
 
+.visible {
+  //visibility: visible;
+  //opacity: 1;
+}
+
+.hidden {
+  //visibility: hidden;
+  //opacity: 0;
+  //position: absolute;
+  //top: -100vh;
+  display: none;
+}
