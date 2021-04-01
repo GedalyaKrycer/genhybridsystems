@@ -5,13 +5,26 @@ import PrimaryCTAButton from "../../ui/PrimaryCTAButton/PrimaryCTAButton";
 import Logo from '../../../assets/ghs-ribbon-logo.svg';
 import useWindowDimensions from '../../../utils/useWindowDimensions';
 import { useGHStContext } from '../../../utils/ContextProvider';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
 const Navbar = props => {
 
     const [openMenu, setOpenMenu] = useState(false);
+    const [stickyNavStyle, setStickyNavStyle] = useState(true)
     const [desktopView, setDesktopView] = useState(true);
     const {width} = useWindowDimensions()
     const {setModalOpen} = useGHStContext();
+
+    useScrollPosition(
+        ({ prevPos, currPos }) => {
+            const isShow = currPos.y > 20;
+            if (isShow !== stickyNavStyle) setStickyNavStyle(isShow)
+        },
+        [stickyNavStyle],
+        false,
+        false,
+        300
+    )
 
     useEffect(() => {
         if(width > 676) {
@@ -29,7 +42,7 @@ const Navbar = props => {
     return (
         <nav
             role="navigation"
-            className={`navBar ${openMenu && width < 677  ? "navBar--active" : null}`}
+            className={`navBar ${(openMenu && width < 677) || (!stickyNavStyle && width < 677) ? "navBar--active" : null}`}
         >
 
             <div className="navBar__header">
