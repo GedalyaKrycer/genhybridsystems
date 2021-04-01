@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from "./components/nav/Navbar/Navbar";
 import Modal from './components/ui/Modal/Modal';
 import { GHSProvider } from './utils/ContextProvider';
+import MailchimpForm from "./components/nav/MailchimpForm/MailchimpForm";
 
 const App = () => {
   return (
@@ -35,7 +36,7 @@ const App = () => {
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
                   </p>
               </main>
-              <Modal>Hello Modal</Modal>
+              <Modal><MailchimpForm /></Modal>
           </GHSProvider>
       </>
   );
