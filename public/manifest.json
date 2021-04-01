@@ -1,19 +1,29 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Gen Hybrid",
+  "name": "Gen Hybrid Systems",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "ghs-favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "ghs192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "ghs256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "ghs384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "ghs512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
