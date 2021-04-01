@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState, useLayoutEffect} from 'react';
 
 // Original Solution: https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs
 
@@ -10,7 +10,7 @@ const getWindowDimensions = () => {
 const useWindowDimensions = () => {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const handleResize = () => {
             setWindowDimensions(getWindowDimensions())
         }

@@ -13,6 +13,7 @@ const useIntersectionObserver = options => {
 
     useEffect(() => {
         const observer = new IntersectionObserver(callBackFunction, options);
+
         if(elementRef.current) observer.observe(elementRef.current);
 
         return () => {
