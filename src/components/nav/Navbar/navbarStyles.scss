@@ -69,22 +69,24 @@
     position: absolute;
     height: 4px;
     right: 0;
-    transition: 0.1s ease-in-out;
   }
 
   &-lines-1 {
     width: 34px;
     top: 2px;
+    transition: 0.2s 0.1s ease-out;
   }
 
   &-lines-2 {
     width: 22px;
     top: 16px;
+    transition: 0.1s ease-in-out;
   }
 
   &-lines-3 {
     width: 28px;
     top: 29px;
+    transition: 0.2s 0.1s ease-out;
   }
 
   .open-menu &-lines-1 {
