@@ -37,16 +37,20 @@
 
 .modal__content {
   position: relative;
-  background-color: white;
+  background-color: v.$primaryDark2;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   padding: 20px;
-  border-radius: 10px;
   transition: all 0.3s ease-out;
   -webkit-animation: MODAL-FADE-UP 0.5s forwards ease-in-out; /* Safari 4+ */
   -moz-animation:    MODAL-FADE-UP 0.5s forwards ease-in-out; /* Fx 5+ */
   -o-animation:      MODAL-FADE-UP 0.5s forwards ease-in-out; /* Opera 12+ */
   animation:         MODAL-FADE-UP 0.5s forwards ease-in-out; /* IE 10+, Fx 29+ */
+
+  @include m.smMinBreakPoint {
+    padding: 60px;
+    max-width: 600px;
+  }
 }
 
 
@@ -57,7 +61,7 @@
   right: 15px;
   transform: rotate(45deg);
   font-size: 1.3rem;
-  color: rgba(0,0,0,0.8);
+  color:  v.$primary;
   cursor: pointer;
   transition: color .2s ease;
 }
@@ -66,16 +70,3 @@
   color: v.$highlight1;
 }
 
-
-
-/* ————————————————————————————————————————————————
-2. Breakpoints
-———————————————————————————————————————————————— */
-
-@media screen and (min-width: 476px) {
-
-  .modal__content {
-    padding: 60px;
-    max-width: 600px;
-  }
-}
