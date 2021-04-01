@@ -5,7 +5,9 @@ const PrimaryCTAButton = props => {
 
     return (
         <button
-            className={`primaryBtn ${props.icon ? "primaryBtn--grid" : null}`}
+            className={`primaryBtn 
+            ${props.size === 'big' ? "primaryBtn--big" : "primaryBtn--normal"}
+            ${props.icon ? "primaryBtn--grid" : null}`}
             onClick={props.handleClick}
         >
             {props.icon && props.icon}

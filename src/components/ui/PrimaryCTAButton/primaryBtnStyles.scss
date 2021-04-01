@@ -5,7 +5,6 @@
   background-color: v.$highlight1;
   border-style: none;
   @include m.poppinsFontStack;
-  font-size: 16px;
   font-weight: bold;
   color: v.$primary;
   box-shadow: 0 4px 23px rgba(0, 0, 0, 0.45);
@@ -13,12 +12,30 @@
   text-align: center;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  padding: 8px 18px;
 
-  @include m.smMinBreakPoint {
-    max-width: max-content;
-    padding: 4px 18px;
+  &--normal {
+    padding: 8px 18px;
+    font-size: 16px;
+
+    @include m.smMinBreakPoint {
+      max-width: max-content;
+      padding: 4px 18px;
+    }
   }
+
+  &--big {
+    padding: 10px 30px;
+    font-size: 20px;
+
+    @include m.smMinBreakPoint {
+      max-width: max-content;
+    }
+  }
+
+
+
+
+
 
   &:hover {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
