@@ -1,0 +1,118 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+.hero__container {
+  border-bottom: 20px solid v.$primaryDark2;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 555px;
+
+  @include m.smMinBreakPoint {
+    padding-top: 60px;
+    height: 600px;
+    align-items: center;
+  }
+
+  @include m.lgMinBreakPoint {
+    height: 730px;
+  }
+}
+
+.hero__content {
+  color: v.$secondary1;
+  max-width: 600px;
+  position: relative;
+  z-index: 1;
+
+  @include m.smMinBreakPoint {
+    max-width: 500px;
+  }
+
+  @include m.lgMinBreakPoint {
+    max-width: 600px;
+  }
+}
+
+.hero__subhead {
+  font-size: 18px;
+  line-height: 28px;
+
+  @include m.smMinBreakPoint {
+    font-size: 22px;
+    line-height: 34px;
+    max-width: 485px;
+  }
+}
+
+.hero__bg-img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 300px;
+  width: 100%;
+  z-index: -1;
+
+  @include m.smMinBreakPoint {
+    border-bottom: 20px solid v.$primaryDark2;
+    width: 80%;
+    height: 600px;
+  }
+
+  @include m.lgMinBreakPoint {
+    height: 730px;
+    background-position: center;
+  }
+}
+
+
+.hero__img-1 {
+  background: linear-gradient(-270deg, #39251C 3.36%, rgba(57, 37, 28, 0.44) 49.98%), linear-gradient(360deg, #39251C -1.7%, rgba(57, 37, 28, 0) 23.58%), url("../../../assets/hero-girl-in-class.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.hero__img-2 {
+  background: linear-gradient(-270deg, #39251C 3.36%, rgba(57, 37, 28, 0.44) 49.98%), linear-gradient(360deg, #39251C -1.7%, rgba(57, 37, 28, 0) 23.58%), url("../../../assets/hero-boy-learning-from-home.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.hero__img-container div:nth-of-type(1) {
+  animation-delay: 16s;
+  -webkit-animation-delay: 16s;
+}
+
+.hero__img-container div:nth-of-type(2) {
+  animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+}
+
+.hero__img-container div:nth-of-type(3) {
+  animation-delay: 8s;
+  -webkit-animation-delay: 8s;
+}
+
+.hero__img-container div:nth-of-type(4) {
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+
+.hero__img-container div:nth-of-type(5) {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+.hero__img-container div {
+  animation-name: backgroundImgChangeFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 16s;
+
+  -webkit-animation-name: backgroundImgChangeFadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 16s;
+}
