@@ -7,7 +7,6 @@ import InputField from "../../ui/InputField/InputField";
 
 const CustomForm = ({ status, message, onValidated }) => {
 
-    // let email, firstName, lastName;
 
     const {modalOpen, setModalOpen} = useGHStContext();
 
@@ -15,9 +14,6 @@ const CustomForm = ({ status, message, onValidated }) => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
 
-    // useEffect(() => {
-    //     clearFields();
-    // }, [modalOpen])
 
     const handleSubmit = (e) => {
         e.preventDefault();
