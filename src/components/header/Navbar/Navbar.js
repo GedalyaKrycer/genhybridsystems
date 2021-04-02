@@ -80,42 +80,42 @@ const Navbar = props => {
             >
                 <SocialMediaIcon
                     type={"youtube"}
-                    location={"mobile-nav"}
+                    location={"mobile-header"}
                     height={40}
                     width={28}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"ticktock"}
-                    location={"mobile-nav"}
+                    location={"mobile-header"}
                     height={27}
                     width={30}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"instagram"}
-                    location={"mobile-nav"}
+                    location={"mobile-header"}
                     height={31}
                     width={30}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"snapchat"}
-                    location={"mobile-nav"}
+                    location={"mobile-header"}
                     height={33}
                     width={30}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"twitter"}
-                    location={"mobile-nav"}
+                    location={"mobile-header"}
                     height={34}
                     width={28}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"facebook"}
-                    location={"mobile-nav"}
+                    location={"mobile-header"}
                     height={30}
                     width={31}
                     disable={false}
