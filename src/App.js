@@ -1,8 +1,9 @@
 import React from 'react';
-import Navbar from "./components/nav/Navbar/Navbar";
+import Navbar from "./components/header/Navbar/Navbar";
 import Modal from './components/ui/Modal/Modal';
+import HeroContainer from "./components/header/HeroContainer/HeroContainer";
 import { GHSProvider } from './utils/ContextProvider';
-import MailchimpForm from "./components/nav/MailchimpForm/MailchimpForm";
+import MailchimpForm from "./components/header/MailchimpForm/MailchimpForm";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
           <GHSProvider>
               <header>
                 <Navbar />
+                <HeroContainer />
               </header>
               <main>
                   <p>
