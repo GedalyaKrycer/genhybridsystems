@@ -45,7 +45,7 @@ const Navbar = props => {
             className={`navBar ${(openMenu && width < 677) || (!stickyNavStyle && width < 677) ? "navBar--active" : null}`}
         >
 
-            <div className="navBar__header">
+            <div className="navBar__nav">
                 <img
                     className="navBar__logo"
                     src={Logo}
@@ -80,42 +80,42 @@ const Navbar = props => {
             >
                 <SocialMediaIcon
                     type={"youtube"}
-                    location={"mobile-header"}
+                    location={"mobile-nav"}
                     height={40}
                     width={28}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"ticktock"}
-                    location={"mobile-header"}
+                    location={"mobile-nav"}
                     height={27}
                     width={30}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"instagram"}
-                    location={"mobile-header"}
+                    location={"mobile-nav"}
                     height={31}
                     width={30}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"snapchat"}
-                    location={"mobile-header"}
+                    location={"mobile-nav"}
                     height={33}
                     width={30}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"twitter"}
-                    location={"mobile-header"}
+                    location={"mobile-nav"}
                     height={34}
                     width={28}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"facebook"}
-                    location={"mobile-header"}
+                    location={"mobile-nav"}
                     height={30}
                     width={31}
                     disable={false}
