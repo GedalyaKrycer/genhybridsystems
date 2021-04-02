@@ -69,3 +69,44 @@
     opacity: 1;
   }
 }
+
+
+
+// backgroundImgChangeFadeInOut
+// Original solution http://jsfiddle.net/k2dzLxq4/1/
+
+@keyframes backgroundImgChangeFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes backgroundImgChangeFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

@@ -12,9 +12,11 @@ h1 {
   font-weight: normal;
   font-size: 46px;
   line-height: 114%;
+  margin: .5rem 0 1rem;
 
   @include m.smMinBreakPoint {
-    font-size: 76px;
+    font-size: 70px;
+    margin: 1rem 0 2rem;
   }
 
   @include m.lgMinBreakPoint {
