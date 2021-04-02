@@ -1,0 +1,18 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+
+.section-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  padding: 0 20px;
+
+  @include m.smMinBreakPoint {
+    grid-template-columns: 10% 1fr;
+    max-width: v.$screen-full;
+    margin: 0 auto;
+  }
+}
+
+
