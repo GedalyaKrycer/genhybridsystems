@@ -7,7 +7,7 @@ const SectionLayout = props => {
 return (
     <section className="section-layout">
         <div />
-        <div>
+        <div className={props.customClass}>
             {props.children}
         </div>
     </section>
