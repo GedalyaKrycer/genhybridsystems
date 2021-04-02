@@ -26,9 +26,6 @@ const Navbar = props => {
         false,
         300
     )
-
-    console.log(stickyNavStyle)
-
     useEffect(() => {
         if(width > 676) {
             setDesktopView(true);
