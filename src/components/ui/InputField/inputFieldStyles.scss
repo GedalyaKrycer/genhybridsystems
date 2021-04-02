@@ -1,0 +1,65 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+
+
+.inputField__label {
+  display: grid;
+  grid-row-gap: 10px;
+  color: v.$secondary2;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  @include m.poppinsFontStack;
+
+  @include m.smMinBreakPoint {
+    font-size: 18px;
+  }
+}
+
+.inputField__field {
+  @include m.poppinsFontStack;
+  background-color: v.$primaryDark3;
+  border: none;
+  font-size: 16px;
+  padding: 16px 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  font-weight: bold;
+  color: v.$secondary2;
+
+  @include m.smMinBreakPoint {
+    font-size: 18px;
+    padding: 20px 25px;
+  }
+}
+
+::placeholder { /* Firefox */
+  font-weight: normal;
+  color: v.$primary
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: v.$primary;
+  font-weight: normal;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: v.$primary;
+  font-weight: normal;
+}
+
+
+input[disabled] {
+  background-color: v.$primaryDark2;
+  cursor: default;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+
+  &:hover {
+    background-color: v.$primaryDark2;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+    transform: scale(1);
+  }
+}
