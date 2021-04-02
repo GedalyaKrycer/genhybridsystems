@@ -57,6 +57,7 @@
   .social-svg--mobile-hero {
     fill: v.$highlight1;
     transition: fill 0.3s ease-in-out;
+    overflow: visible
   }
 
   &:hover .social-svg--mobile-hero {

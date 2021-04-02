@@ -1,0 +1,40 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+.smbar__container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.smbar__title {
+  font-size: 16px;
+  font-weight: bold;
+  color: v.$primary;
+  border-right: v.$primary solid 2px;
+  padding-right: 40px;
+}
+
+.smbar__icons {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(6, 50px);
+  grid-column-gap: 10px;
+  overflow: scroll;
+}
+
+.test {
+  position: absolute;
+  right: -1px;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  background: linear-gradient(270deg, #39251C 0%, rgba(57, 37, 28, 0) 100%);
+
+}
+
+
