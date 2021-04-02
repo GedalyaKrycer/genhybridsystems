@@ -17,7 +17,8 @@ const Navbar = props => {
 
     useScrollPosition(
         ({ prevPos, currPos }) => {
-            const isShow = currPos.y > 20;
+            console.log(currPos.y)
+            const isShow = currPos.y > -80;
             if (isShow !== stickyNavStyle) setStickyNavStyle(isShow)
         },
         [stickyNavStyle],
@@ -25,6 +26,8 @@ const Navbar = props => {
         false,
         300
     )
+
+    console.log(stickyNavStyle)
 
     useEffect(() => {
         if(width > 676) {
