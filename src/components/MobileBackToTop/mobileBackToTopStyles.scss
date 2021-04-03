@@ -1,0 +1,16 @@
+@use "../../sassStyles/variables" as v;
+@use "../../sassStyles/mixins" as m;
+
+
+.mbt__layout {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  margin: 0 auto;
+
+  @include m.smMinBreakPoint {
+    display: none;
+  }
+}
+
