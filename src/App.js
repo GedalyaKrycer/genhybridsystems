@@ -4,16 +4,20 @@ import Modal from './components/ui/Modal/Modal';
 import HeroContainer from "./components/header/HeroContainer/HeroContainer";
 import { GHSProvider } from './utils/ContextProvider';
 import MailchimpForm from "./components/header/MailchimpForm/MailchimpForm";
+import PinnedSideBar from "./components/ui/PinnedSideBar/PinnedSideBar";
+import SectionLayout from "./components/ui/SectionLayout/SectionLayout";
 
 const App = () => {
   return (
       <>
           <GHSProvider>
-              <header>
+              <PinnedSideBar />
+              <header id="top">
                 <Navbar />
                 <HeroContainer />
               </header>
               <main>
+
                   <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
                   </p>
