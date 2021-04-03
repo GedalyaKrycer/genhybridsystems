@@ -4,14 +4,15 @@ import Modal from './components/ui/Modal/Modal';
 import HeroContainer from "./components/header/HeroContainer/HeroContainer";
 import { GHSProvider } from './utils/ContextProvider';
 import MailchimpForm from "./components/header/MailchimpForm/MailchimpForm";
-import PinnedSideBar from "./components/ui/PinnedSideBar/PinnedSideBar";
-import SectionLayout from "./components/ui/SectionLayout/SectionLayout";
+import PinnedSideBar from "./components/PinnedSideBar/PinnedSideBar";
+import MobileBackToTop from "./components/MobileBackToTop/MobileBackToTop";
 
 const App = () => {
   return (
       <>
           <GHSProvider>
               <PinnedSideBar />
+              <MobileBackToTop />
               <header id="top">
                 <Navbar />
                 <HeroContainer />
