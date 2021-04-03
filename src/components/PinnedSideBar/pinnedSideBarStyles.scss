@@ -1,0 +1,59 @@
+@use "../../sassStyles/variables" as v;
+@use "../../sassStyles/mixins" as m;
+
+
+.psb__layout {
+  display: none;
+
+  @include m.smMinBreakPoint {
+    position: relative;
+    top: 100px;
+    left: 0;
+    display: block;
+    background-color: green;
+    padding: 0 20px;
+    max-width: v.$screen-full;
+    margin: 0 auto;
+  }
+
+  @include m.lgMinBreakPoint {
+    top: 155px;
+  }
+}
+
+.psb__container {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+}
+
+.psb__social-container {
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  grid-row-gap: 25px;
+}
+
+
+.psb__social-text {
+  transform: rotate(-90deg);
+  color: v.$primary;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.psb__line-break {
+  display: block;
+  width: 2px;
+  height: 40px;
+  background-color: v.$primary;
+  margin: 0 auto 10px;
+}
+
+.psb__social-icons {
+  display: grid;
+  grid-template-rows: repeat(6, max-content);
+  grid-row-gap: 25px;
+  justify-content: center;
+}
