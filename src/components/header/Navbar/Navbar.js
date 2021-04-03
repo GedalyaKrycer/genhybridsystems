@@ -10,7 +10,7 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 const Navbar = props => {
 
     const [openMenu, setOpenMenu] = useState(false);
-    const [stickyNavStyle, setStickyNavStyle] = useState(true)
+    const [stickyNavStyle, setStickyNavStyle] = useState(true);
     const [desktopView, setDesktopView] = useState(true);
     const {width} = useWindowDimensions()
     const {setModalOpen} = useGHStContext();
@@ -24,7 +24,8 @@ const Navbar = props => {
         false,
         false,
         300
-    )
+    );
+
     useEffect(() => {
         if(width > 676) {
             setDesktopView(true);
