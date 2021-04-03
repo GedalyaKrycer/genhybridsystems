@@ -3,8 +3,13 @@
 
 .social-link {
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: min-content min-content;
   align-items: center;
+  justify-content: center;
+
+  img {
+    transition: fill 0.3s ease-in-out;
+  }
 
   p {
     margin: 0;
@@ -52,33 +57,15 @@
 
 
 //Mobile Hero Icons
-.social-link--mobile-hero {
-
-  .social-svg--mobile-hero {
-    fill: v.$highlight1;
-    transition: fill 0.3s ease-in-out;
-    overflow: visible
-  }
-
-  &:hover .social-svg--mobile-hero {
-    fill: v.$primary;
-  }
-
+.social-link--mobile-hero img {
+  height: 25px;
 }
 
 
 //Mobile Nav Icons
-.social-link--mobile-nav {
-
-  .social-svg--mobile-nav {
-    fill: v.$primary;
-    transition: fill 0.3s ease-in-out;
-  }
-
-  &:hover .social-svg--mobile-nav {
-    fill: v.$highlight1;
-  }
-
+.social-link--mobile-nav img {
+  height: 30px;
+  width: 100%;
 }
 
 
