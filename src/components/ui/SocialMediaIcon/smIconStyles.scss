@@ -6,6 +6,11 @@
   grid-template-columns: min-content min-content;
   align-items: center;
   justify-content: center;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   img {
     transition: fill 0.3s ease-in-out;
@@ -42,16 +47,9 @@
 
 
 //Sidebar Icons
-.social-link--sidebar {
+.social-link--sidebar img {
 
-  .social-svg--sidebar {
-    fill: v.$primary;
-    transition: fill 0.3s ease-in-out;
-  }
-
-  &:hover .social-svg--sidebar {
-    fill: v.$highlight1;
-  }
+  width: 22px;
 
 }
 
