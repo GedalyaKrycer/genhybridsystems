@@ -1,0 +1,27 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+
+.top__btn {
+  position: relative;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+
+  img {
+    border-radius: 50px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.55);
+    transition: .2s ease-in-out;
+  }
+
+  &:hover {
+    transform: scale(.9);
+  }
+
+  &:hover img {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+  }
+
+  &--sidebar {
+    margin-bottom: 20px;
+  }
+}
