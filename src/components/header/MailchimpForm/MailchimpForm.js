@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback} from 'react';
+import React, {useState, useEffect} from 'react';
 import './mcFormStyles.scss';
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import PrimaryCTAButton from "../../ui/PrimaryCTAButton/PrimaryCTAButton";
