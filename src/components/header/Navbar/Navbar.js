@@ -17,7 +17,6 @@ const Navbar = props => {
 
     useScrollPosition(
         ({ prevPos, currPos }) => {
-            console.log(currPos.y)
             const isShow = currPos.y > -80;
             if (isShow !== stickyNavStyle) setStickyNavStyle(isShow)
         },
@@ -81,45 +80,45 @@ const Navbar = props => {
                 <SocialMediaIcon
                     type={"youtube"}
                     location={"mobile-nav"}
-                    height={40}
-                    width={28}
+                    theme="dark"
                     disable={false}
                 />
+
                 <SocialMediaIcon
                     type={"ticktock"}
                     location={"mobile-nav"}
-                    height={27}
-                    width={30}
+                    theme="dark"
                     disable={false}
                 />
+
                 <SocialMediaIcon
                     type={"instagram"}
                     location={"mobile-nav"}
-                    height={31}
-                    width={30}
+                    theme="dark"
                     disable={false}
                 />
+
                 <SocialMediaIcon
                     type={"snapchat"}
                     location={"mobile-nav"}
-                    height={33}
-                    width={30}
+                    theme="dark"
                     disable={false}
                 />
+
                 <SocialMediaIcon
                     type={"twitter"}
                     location={"mobile-nav"}
-                    height={34}
-                    width={28}
+                    theme="dark"
                     disable={false}
                 />
+
                 <SocialMediaIcon
                     type={"facebook"}
                     location={"mobile-nav"}
-                    height={30}
-                    width={31}
+                    theme="dark"
                     disable={false}
                 />
+
             </div>
 
             <div

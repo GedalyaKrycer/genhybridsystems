@@ -4,7 +4,6 @@
 .smbar__container {
   display: grid;
   grid-template-columns: max-content 1fr;
-  grid-column-gap: 40px;
   align-items: center;
   margin-bottom: 40px;
   position: relative;
@@ -20,23 +19,34 @@
   color: v.$primary;
   border-right: v.$primary solid 2px;
   padding-right: 40px;
+  z-index: 2;
+  box-shadow: 6px 0 10px v.$primaryDark3;
 }
 
 .smbar__icons {
   display: grid;
   align-items: center;
   justify-content: space-between;
-  grid-template-columns: repeat(6, 50px);
-  grid-column-gap: 10px;
+  padding-left: 20px;
+  position: relative;
+  grid-template-columns: repeat(7, max-content);
+  grid-column-gap: 35px;
   overflow: scroll;
+
+  .smbar__spacer {
+    width: 15px;
+    height: 20px;
+  }
+
 }
 
-.test {
+.smbar__fade-right {
   position: absolute;
   right: -1px;
   top: 0;
   width: 30px;
   height: 100%;
+  z-index: 3;
   background: linear-gradient(270deg, #39251C 0%, rgba(57, 37, 28, 0) 100%);
 
 }

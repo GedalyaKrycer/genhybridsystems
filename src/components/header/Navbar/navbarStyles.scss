@@ -156,7 +156,8 @@
   display: grid;
   grid-template-columns: repeat(3, min-content);
   grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 20px;
+  grid-row-gap: 40px;
+  margin: 10px 0;
   justify-content: space-around;
   align-content: center;
   transition: opacity .2s .2s ease-in-out;

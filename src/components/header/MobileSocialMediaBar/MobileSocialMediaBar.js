@@ -1,62 +1,59 @@
 import React from 'react';
-import './mobileSocialMedaBarStyles.scss';
+import './mobileSocialMediaBarStyles.scss';
 import SocialMediaIcon from "../../ui/SocialMediaIcon/SocialMediaIcon";
 
 
-const MobileSocialMedaBar = props => {
+const MobileSocialMediaBar = props => {
 
 
     return (
         <div className="smbar__container">
             <p className="smbar__title">follow</p>
-            <div className="test"/>
+            <div className="smbar__fade-right"/>
+
             <div className="smbar__icons">
                 <SocialMediaIcon
                     type={"youtube"}
                     location={"mobile-hero"}
-                    height={20}
-                    width={23}
+                    theme={"light"}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"facebook"}
                     location={"mobile-hero"}
-                    height={29}
-                    width={30}
+                    theme={"light"}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"instagram"}
                     location={"mobile-hero"}
-                    height={30}
-                    width={30}
+                    theme={"light"}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"snapchat"}
                     location={"mobile-hero"}
-                    height={30}
-                    width={28}
+                    theme={"light"}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"twitter"}
                     location={"mobile-hero"}
-                    height={30}
-                    width={33}
+                    theme={"light"}
                     disable={false}
                 />
                 <SocialMediaIcon
                     type={"ticktock"}
                     location={"mobile-hero"}
-                    height={31}
-                    width={26}
+                    theme={"light"}
                     disable={false}
                 />
+
+                <div className="smbar__spacer"></div>
 
             </div>
         </div>
     );
 };
 
-export default MobileSocialMedaBar;
+export default MobileSocialMediaBar;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './heroStyles.scss';
 import SectionLayout from "../../ui/SectionLayout/SectionLayout";
-import MobileSocialMedaBar from "../MobileSocialMedaBar/MobileSocialMedaBar";
+import MobileSocialMediaBar from "../MobileSocialMediaBar/MobileSocialMediaBar";
 
 
 const HeroContainer = props => {
@@ -13,7 +13,7 @@ const HeroContainer = props => {
                 <div className="hero__content">
                     <h1>Education on <span className="g__text-emphasis">their</span> terms brings hope</h1>
                     <p className="hero__subhead">Our hybrid classroom and at-home learning model makes education accessible in underserved communities. </p>
-                    <MobileSocialMedaBar />
+                    <MobileSocialMediaBar />
                 </div>
 
             </SectionLayout>
