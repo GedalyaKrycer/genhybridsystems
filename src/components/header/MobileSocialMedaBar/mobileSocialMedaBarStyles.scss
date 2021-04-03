@@ -8,6 +8,10 @@
   align-items: center;
   margin-bottom: 40px;
   position: relative;
+
+  @include m.smMinBreakPoint {
+    display: none;
+  }
 }
 
 .smbar__title {
