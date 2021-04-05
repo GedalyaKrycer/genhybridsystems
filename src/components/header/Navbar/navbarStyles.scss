@@ -43,6 +43,7 @@
 
 .navBar__logo {
   width: 100px;
+  height: 100%;
   transition: .3s ease-in-out;
   @include m.smMinBreakPoint {
     width: 139px;
