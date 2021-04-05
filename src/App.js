@@ -6,7 +6,7 @@ import { GHSProvider } from './utils/ContextProvider';
 import MailchimpForm from "./components/header/MailchimpForm/MailchimpForm";
 import PinnedSideBar from "./components/PinnedSideBar/PinnedSideBar";
 import MobileBackToTop from "./components/MobileBackToTop/MobileBackToTop";
-import CrisisContainer from "./components/crisis/crisisContainer/CrisisContainer";
+import CrisisContainer from "./components/crisis/CrisisContainer/CrisisContainer";
 
 const App = () => {
   return (
