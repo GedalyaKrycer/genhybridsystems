@@ -6,6 +6,7 @@ import { GHSProvider } from './utils/ContextProvider';
 import MailchimpForm from "./components/header/MailchimpForm/MailchimpForm";
 import PinnedSideBar from "./components/PinnedSideBar/PinnedSideBar";
 import MobileBackToTop from "./components/MobileBackToTop/MobileBackToTop";
+import CrisisContainer from "./components/crisis/crisisContainer/CrisisContainer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
                 <HeroContainer />
               </header>
               <main>
+                  <CrisisContainer />
 
                   <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
