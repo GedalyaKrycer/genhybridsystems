@@ -1,0 +1,62 @@
+@use "../../../sassStyles/variables" as v;
+@use "../../../sassStyles/mixins" as m;
+
+.about-hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 70px;
+}
+
+.about-hero__icon {
+  width: 110px;
+  height: 74px;
+  z-index: 1;
+
+  @include m.smMinBreakPoint {
+    width: 145px;
+    height: 97.63px;
+  }
+}
+
+.about-hero__title {
+  text-align: center;
+  color: v.$secondary1;
+  margin: 20px 0 180px;
+  z-index: 1;
+  max-width: 360px;
+
+  @include m.smMinBreakPoint {
+    max-width: 470px;
+    margin: 40px 0 450px
+  }
+
+
+  @include m.mdMinBreakPoint {
+    max-width: 570px;
+  }
+
+  @include m.lgMinBreakPoint {
+    max-width: 780px;
+    font-size: 74px;
+  }
+
+}
+
+.about-hero__img {
+  width: 100%;
+  height: 205px;
+  background: linear-gradient(90deg, #39251C 0%, rgba(57, 37, 28, 0) 47.92%), linear-gradient(180deg, #39251C 0%, rgba(57, 37, 28, 0.35) 100%), url('../../../assets/about-hero-banner.jpg') center;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+
+  @include m.smMinBreakPoint {
+    height: 495px;
+  }
+}
+
+

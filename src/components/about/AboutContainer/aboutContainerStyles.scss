@@ -1,0 +1,77 @@
+@use "../../../sassStyles/variables" as v;
+@use "../../../sassStyles/mixins" as m;
+
+
+.about__container {
+  @include m.smMinBreakPoint {
+    padding-right: 15px;
+  }
+}
+
+.about__section-title {
+  color: v.$secondary1;
+  text-align: center;
+
+  @include m.smMinBreakPoint {
+    margin: 100px 0 40px;
+    text-align: left;
+  }
+}
+
+
+.about__content-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  align-items: center;
+
+  @include m.lgMinBreakPoint {
+    grid-template-columns: 50% 1fr;
+  }
+
+}
+
+.about__content-subtitle {
+  color: v.$secondary2;
+  font-weight: normal;
+
+  margin-top: 0;
+}
+
+.about__content-text {
+  color: v.$secondary1;
+}
+
+.about__content-image {
+  width: 100%;
+  height: auto;
+}
+
+.about__quote-container {
+  color: v.$primary;
+  max-width: 925px;
+  margin: 120px auto;
+}
+
+.about__quote {
+  @include m.playfairFontStack();
+  font-size: 23px;
+  line-height: 33px;
+  text-align: center;
+  margin: 0;
+
+  @include m.lgMinBreakPoint {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.about__quote-author {
+  text-align: center;
+  font-size: 16px;
+
+  @include m.lgMinBreakPoint {
+    font-size: 18px;
+  }
+}
