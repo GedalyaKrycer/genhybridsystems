@@ -10,7 +10,6 @@ const PinnedSideBar = props => {
 
     useScrollPosition(
         ({ prevPos, currPos }) => {
-            console.log(currPos)
             const isShow = currPos.y < -200;
             if (isShow !== showButton) setShowButton(isShow)
         },
