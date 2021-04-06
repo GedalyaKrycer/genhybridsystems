@@ -70,7 +70,7 @@ const Navbar = props => {
                 id="menu"
             >
                 <li><a href="#crisis">crisis</a></li>
-                <li><a href="#mission">mission</a></li>
+                <li><a href="#about">about</a></li>
                 <li><a href="#videos">videos</a></li>
                 <li><a href="#connect">connect</a></li>
             </ul>
