@@ -106,3 +106,25 @@
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   margin: 50px auto 0;
 }
+
+.about__partners {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+
+  @include m.smMinBreakPoint {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.about__partner-img {
+  height: 100px;
+  width: auto;
+}
+
+.about__partner-text {
+  color: v.$secondary1;
+  font-style: italic;
+  font-weight: normal;
+}

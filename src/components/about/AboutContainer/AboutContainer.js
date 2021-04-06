@@ -4,6 +4,7 @@ import SectionLayout from "../../ui/SectionLayout/SectionLayout";
 import aboutContentImage1 from '../../../assets/about-content-img-1.jpg';
 import aboutContentImage2 from '../../../assets/about-content-img-2.jpg';
 import MilestoneCard from "../MilestoneCard/MilestoneCard";
+import logo from '../../../assets/ghs-ribbon-logo.svg';
 
 const AboutContainer = props => {
 
@@ -66,6 +67,27 @@ const AboutContainer = props => {
                         date="12/21"
                         event="New & Improved Computer Lab"
                     />
+                </div>
+            </div>
+            <div className="about__partner-section">
+                <h3 className="about__content-subtitle">Our Partners</h3>
+                <div className="about__partners">
+                    <div className="about__partner-container">
+                        <img
+                            src={logo}
+                            alt="some partner logo"
+                            className="about__partner-img"
+                        />
+                        <p className="about__partner-text">Lorem ipsum dolor sit amet, consect etur adipiscing elit. Accumsan varius vulputate at leo ut integer</p>
+                    </div>
+                    <div className="about__partner-container">
+                        <img
+                            src={logo}
+                            alt="some partner logo"
+                            className="about__partner-img"
+                        />
+                        <p className="about__partner-text">Lorem ipsum dolor sit amet, consect etur adipiscing elit. Accumsan varius vulputate at leo ut integer</p>
+                    </div>
                 </div>
             </div>
 
