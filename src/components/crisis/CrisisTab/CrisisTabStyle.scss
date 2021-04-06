@@ -1,0 +1,107 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+
+.crisis-tab {
+  list-style: none;
+  margin-top: -1px;
+  border: 1px solid v.$primary;
+}
+
+.crisis-tab__btn {
+  padding: 25px;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: v.$primaryDark3;
+  }
+
+  &:hover .crisis-tab__title,
+  &:focus .crisis-tab__title
+  {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    cursor: default;
+  }
+}
+
+.crisis-tab__title {
+  margin: 0;
+  text-align: left;
+  color: v.$highlight1;
+  transition: 0.3s ease-in-out;
+
+  &--default {
+    font-weight: normal;
+    opacity: 0.6;
+  }
+
+  &--active {
+    font-weight: bold;
+    opacity: 1;
+  }
+}
+
+.crisis-tab__content {
+  padding: 0 25px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+
+  &--default {
+    max-height: 0;
+  }
+
+
+}
+
+.crisis-tab__description {
+  margin-top: 0;
+  font-size: 16px;
+  color: v.$secondary1;
+}
+
+.crisis-tab__cta {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  color: v.$highlight1;
+  background-color: v.$primaryDark1;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 25px;
+
+  &:hover {
+    color: v.$primaryDark3;
+    background-color: v.$highlight1;
+  }
+
+  &:hover {
+    color: v.$primaryDark3;
+    background-color: v.$highlight1;
+  }
+
+  svg {
+    fill: v.$highlight1;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover svg {
+    fill: v.$primaryDark3;
+  }
+}
+
+

@@ -1,0 +1,15 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+
+.tab-image {
+  display: none;
+  width: 80%;
+  height: 515px;
+
+  @include m.smMinBreakPoint {
+    display: block;
+  }
+}
+
+
