@@ -1,0 +1,21 @@
+@use "../../../sassStyles/variables" as v;
+@use "../../../sassStyles/mixins" as m;
+
+.milestone___card {
+  max-width: 240px;
+  box-shadow: 0 13px 24px rgba(0, 0, 0, 0.2);
+  background-color: v.$primaryDark3;
+  border-top: 5px solid v.$highlight2;
+  padding: 30px;
+  text-align: center;
+}
+
+.milestone__date {
+  margin: 0;
+  color: v.$highlight2;;
+}
+
+.milestone__event {
+  margin: 14px 0 0;
+  color: v.$secondary1;;
+}

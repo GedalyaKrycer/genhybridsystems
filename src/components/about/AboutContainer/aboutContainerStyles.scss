@@ -11,6 +11,7 @@
 .about__section-title {
   color: v.$secondary1;
   text-align: center;
+  margin: 60px 0;
 
   @include m.smMinBreakPoint {
     margin: 100px 0 40px;
@@ -62,8 +63,6 @@
 .about__content-image {
   width: 100%;
   height: auto;
-
-
 }
 
 .about__quote-container {
@@ -92,4 +91,18 @@
   @include m.lgMinBreakPoint {
     font-size: 18px;
   }
+}
+
+.about__milestone-container {
+  margin: 120px 0;
+}
+
+.about__milestone-cards {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin: 50px auto 0;
 }

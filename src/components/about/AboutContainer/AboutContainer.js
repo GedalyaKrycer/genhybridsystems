@@ -3,6 +3,7 @@ import './aboutContainerStyles.scss';
 import SectionLayout from "../../ui/SectionLayout/SectionLayout";
 import aboutContentImage1 from '../../../assets/about-content-img-1.jpg';
 import aboutContentImage2 from '../../../assets/about-content-img-2.jpg';
+import MilestoneCard from "../MilestoneCard/MilestoneCard";
 
 const AboutContainer = props => {
 
@@ -44,8 +45,30 @@ const AboutContainer = props => {
                     <p className="about__content-text">In the past, classes taught were oftentimes about an end, and not about a means to further develop understanding of self or others. Gen Hybrid Systems goals are primarily focused on the extent to which the institution would actually support the person’s need for renewed aspiration.</p>
                     <p className="about__content-text">In today’s fast paced technology oriented environment, transparency amongst teacher/students becomes increasingly important. Pupils should be more involved in creating a student centric classroom environment that takes online/offline learning into consideration.</p>
                 </div>
-
             </div>
+            <div className="about__milestone-container">
+                <h3 className="about__content-subtitle">Key Milestones</h3>
+                <p className="about__content-text">We are taking this from a dream to reality!</p>
+                <div className="about__milestone-cards">
+                    <MilestoneCard
+                        date="04/21"
+                        event="Groundbreaking of GEN Facility"
+                    />
+                    <MilestoneCard
+                        date="06/21"
+                        event="First GEN Curriculum"
+                    />
+                    <MilestoneCard
+                        date="09/21"
+                        event="GEN Syllabus of Learning"
+                    />
+                    <MilestoneCard
+                        date="12/21"
+                        event="New & Improved Computer Lab"
+                    />
+                </div>
+            </div>
+
 
         </SectionLayout>
     );
