@@ -7,6 +7,8 @@ import MailchimpForm from "./components/header/MailchimpForm/MailchimpForm";
 import PinnedSideBar from "./components/PinnedSideBar/PinnedSideBar";
 import MobileBackToTop from "./components/MobileBackToTop/MobileBackToTop";
 import CrisisContainer from "./components/crisis/CrisisContainer/CrisisContainer";
+import AboutHeroBanner from "./components/about/AboutHeroBanner/AboutHeroBanner";
+import AboutContainer from "./components/about/AboutContainer/AboutContainer";
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
               </header>
               <main>
                   <CrisisContainer />
+                  <AboutHeroBanner />
+                  <AboutContainer />
 
                   <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
