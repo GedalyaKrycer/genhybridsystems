@@ -1,11 +1,17 @@
 @use "../../../sassStyles/_variables" as v;
 @use "../../../sassStyles/_mixins" as m;
+@use "../../../sassStyles/_animations" as a;
 
 
 .tab-image {
   display: none;
   width: 80%;
-  height: 515px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
 
   @include m.smMinBreakPoint {
     display: block;
