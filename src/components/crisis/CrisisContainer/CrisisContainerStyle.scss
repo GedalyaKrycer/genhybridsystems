@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
 
-  @include m.smMinBreakPoint {
+  @include m.mdMinBreakPoint {
     position: relative;
     padding: 200px 0;
     justify-content: normal;
@@ -20,9 +20,9 @@
   flex-direction: column;
   align-items: center;
 
-  @include m.smMinBreakPoint {
+  @include m.mdMinBreakPoint {
     position: absolute;
-    right: 0;
+    right: 15px;
     align-items: flex-start;
   }
 }
@@ -33,7 +33,7 @@
   text-align: center;
   color: v.$secondary1;
 
-  @include m.smMinBreakPoint {
+  @include m.mdMinBreakPoint {
     text-align: left;
   }
 }
