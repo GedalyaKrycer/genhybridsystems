@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useState} from 'react';
 import './CrisisContainerStyle.scss';
 import SectionLayout from "../../ui/SectionLayout/SectionLayout";
 import crisisImg1 from "../../../assets/crisis-images/crowded-class.jpg";
@@ -13,8 +13,6 @@ const CrisisContainer = props => {
 
     const [currentTab, setCurrentTab] = useState('tab1');
     const [tabImage, setTabImage] = useState(crisisImg1);
-    const [tabHeight, setTabHeight] = useState("0px");
-    const content = useRef(null);
 
     const tabContent = [
         {
@@ -60,24 +58,13 @@ const CrisisContainer = props => {
 
     ]
 
-    useEffect(() => {
-        setTabHeight(`${content.current.scrollHeight}px`)
-    }, [])
-
 
     const tabHandler = (tabName) => {
         setCurrentTab(tabName);
 
         const newImage = tabContent.filter(img => img.name === tabName)
 
-        console.log("tabname", tabName);
-        console.log("newImage", newImage[0].name);
-
         setTabImage(newImage[0].image);
-
-        setTabHeight(`${content.current.scrollHeight}px`)
-
-
     }
 
 
@@ -98,9 +85,6 @@ const CrisisContainer = props => {
                                 description={tab.description}
                                 ctaText={tab.ctaText}
                                 ctaLink={tab.ctaLink}
-                                content={content}
-                                height={tabHeight}
-
                             />
                         })
                     }
