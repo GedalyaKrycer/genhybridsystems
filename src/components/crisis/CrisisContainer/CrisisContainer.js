@@ -12,7 +12,6 @@ import TabImage from "../TabImage/TabImage";
 const CrisisContainer = props => {
 
     const [currentTab, setCurrentTab] = useState('tab1');
-    const [tabImage, setTabImage] = useState(crisisImg1);
 
     const tabContent = [
         {
@@ -61,16 +60,23 @@ const CrisisContainer = props => {
 
     const tabHandler = (tabName) => {
         setCurrentTab(tabName);
-
-        const newImage = tabContent.filter(img => img.name === tabName)
-
-        setTabImage(newImage[0].image);
     }
 
 
     return (
         <SectionLayout id="crisis" customClass="crisis__container">
-            <TabImage image={tabImage} />
+            {
+                tabContent.map((img, i) => {
+                    if(img.name === currentTab) {
+                        return <TabImage
+                            key={img.name + (i * 3)}
+                            active={currentTab}
+                            image={img.image}
+                        />
+                    }
+
+                })
+            }
             <div className="crisis__content-column">
                 <h2 className="crisis__headline">There is a <span className="g__text-emphasis">crisis </span>in Sierra Leone </h2>
                 <ul className="crisis__tab-container">
