@@ -15,17 +15,36 @@ const AboutContainer = props => {
                     <p className="about__content-text">Gen Hybrid Systems, LLC was formed with the goal to promote autonomous learning, with the utilization of traditional face to face instruction concurrently with online teaching. In today’s fast paced technology-oriented environment, students independently discover an array of information ranging from world issue to fashion trends, with an inclination towards matters that pique their interest.</p>
                     <p className="about__content-text">Embracing a student centric environment allows a relationship where teachers are mentors instead of an authoritative figure. The Hybrid learning experience cultivates flexibility and versatility that encourages pupil aspiration.</p>
                 </div>
-                <img
-                    src={aboutContentImage1}
-                    alt="Young students outside of school"
-                    className="about__content-image"
-                />
+                <div className="about__image-container">
+                    <img
+                        src={aboutContentImage1}
+                        alt="Young students outside of school"
+                        className="about__content-image"
+                    />
+                </div>
+
             </div>
             <div className="about__quote-container">
                 <blockquote className="about__quote">
                     “The system of schooling which occupies ten or more years of education for the majority of children and youth in each society does great good for some and may be very damaging for others. It offers all an opportunity to learn – but does so on its own terms”
                 </blockquote>
                 <h4 className="about__quote-author">— Benjamin Bloom</h4>
+            </div>
+            <div className="about__content-section">
+                <div className="about__image-container">
+                <img
+                    src={aboutContentImage2}
+                    alt="Children waving outside a car"
+                    className="about__content-image"
+                />
+                </div>
+                <div className="about__content-text-container">
+                    <h3 className="about__content-subtitle">Gen (Gardner Education Network) Systems Philosophy</h3>
+                    <p className="about__content-text">The educational environment should provide some vision of what an educated human being is. The program should provide intimations that real mysteries might be revealed, that new and higher motives of action might be discovered within, and that a different and more human way of life can be harmoniously constructed by what is learned.</p>
+                    <p className="about__content-text">In the past, classes taught were oftentimes about an end, and not about a means to further develop understanding of self or others. Gen Hybrid Systems goals are primarily focused on the extent to which the institution would actually support the person’s need for renewed aspiration.</p>
+                    <p className="about__content-text">In today’s fast paced technology oriented environment, transparency amongst teacher/students becomes increasingly important. Pupils should be more involved in creating a student centric classroom environment that takes online/offline learning into consideration.</p>
+                </div>
+
             </div>
 
         </SectionLayout>

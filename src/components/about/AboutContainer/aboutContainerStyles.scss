@@ -43,9 +43,27 @@
   color: v.$secondary1;
 }
 
+.about__image-container {
+  position: relative;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, #39251C 0%, rgba(57, 37, 28, 0) 50%, #39251C 100%), linear-gradient(180deg, #39251C 0%, rgba(57, 37, 28, 0.05) 18.23%, rgba(57, 37, 28, 0) 80.73%, #39251C 100%);
+  }
+}
+
 .about__content-image {
   width: 100%;
   height: auto;
+
+
 }
 
 .about__quote-container {
