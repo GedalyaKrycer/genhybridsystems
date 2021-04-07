@@ -31,7 +31,7 @@ const SocialMediaIcon = props => {
                 dark: youtubeDark,
                 light: youtubeLight
             },
-            url: "https://www.youtube.com/"
+            url: "https://www.youtube.com/channel/UCd_vGMt4KBH97jnskSVXBwA"
 
         },
         ticktock: {
