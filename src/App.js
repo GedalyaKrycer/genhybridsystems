@@ -9,6 +9,7 @@ import MobileBackToTop from "./components/MobileBackToTop/MobileBackToTop";
 import CrisisContainer from "./components/crisis/CrisisContainer/CrisisContainer";
 import AboutHeroBanner from "./components/about/AboutHeroBanner/AboutHeroBanner";
 import AboutContainer from "./components/about/AboutContainer/AboutContainer";
+import VideosContainer from "./components/videos/VideosContainer/VideosContainer";
 
 const App = () => {
   return (
@@ -24,30 +25,7 @@ const App = () => {
                   <CrisisContainer />
                   <AboutHeroBanner />
                   <AboutContainer />
-
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
-                  </p>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
-                  </p>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
-                  </p><p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
-                  </p><p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
-                  </p><p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
-                  </p><p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
-                  </p><p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
-                  </p><p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
-                  </p><p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis deleniti deserunt dicta fuga fugiat harum ipsum iure magnam necessitatibus nihil non omnis quas quis sed soluta ullam veniam veritatis.
-                  </p>
+                  <VideosContainer />
               </main>
               <Modal><MailchimpForm /></Modal>
           </GHSProvider>
