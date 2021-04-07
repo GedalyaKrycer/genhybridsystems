@@ -1,2 +1,68 @@
 @use "../../../sassStyles/variables" as v;
 @use "../../../sassStyles/mixins" as m;
+
+
+.video__section-container {
+  border-top: 20px solid v.$primaryDark2;
+  margin-top: 120px;
+  padding: 60px 0;
+
+  @include m.mdMinBreakPoint {
+    padding: 120px 0;  }
+}
+
+.video__content-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  justify-items: center;
+  align-items: center;
+  @include m.mdMinBreakPoint {
+    grid-template-columns: 305px 1fr;
+  }
+
+
+}
+
+
+.video__card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 305px);
+  justify-items: center;
+  gap: 10px;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+
+.video__content {
+  color: v.$secondary1;
+  max-width: 305px;
+  text-align: center;
+
+  @include m.mdMinBreakPoint {
+
+    text-align: left;
+  }
+}
+
+.video__title {
+  margin: 0;
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+.video__cta {
+  margin-top: 30px;
+
+  @media screen and (max-width: v.$screen-md) {
+    margin: 30px auto;
+  }
+  img {
+    height: 15px;
+    width: auto;
+  }
+}
