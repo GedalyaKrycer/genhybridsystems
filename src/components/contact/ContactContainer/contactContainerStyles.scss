@@ -1,0 +1,96 @@
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
+
+.contact__container {
+  position: relative;
+  background-color: v.$primaryDark2;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include m.lgMinBreakPoint {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+.contact__logo {
+  position: absolute;
+  width: 160px;
+  height: auto;
+  top: -6px;
+  right: 50%;
+  left: 49.6%;
+  transform: translateX(-50%);
+}
+
+.contact__title {
+  color: v.$secondary1;
+
+  span {
+    display: block;
+  }
+
+  &--left {
+    text-align: center;
+
+    @include m.lgMinBreakPoint {
+      text-align: left;
+    }
+  }
+
+  &--right {
+  text-align: center;
+
+    @include m.lgMinBreakPoint {
+      text-align: right;
+    }
+  }
+}
+
+
+.contact__connect-container {
+  border-bottom: 11px solid v.$primaryDark3;
+  padding: 100px 20px 40px;
+
+  @include m.lgMinBreakPoint {
+    border-right: 11px solid v.$primaryDark3;
+    padding: 0 80px 80px;
+  }
+
+}
+
+.contact__contact-group {
+  margin-top: 50px;
+  text-align: center;
+
+  @include m.lgMinBreakPoint {
+    text-align: left;
+  }
+
+  h3 {
+    color: v.$secondary1;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: v.$highlight1;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: v.$primary;
+    }
+  }
+}
+
+.contact__form-container {
+
+  padding: 20px 20px;
+
+  @include m.lgMinBreakPoint {
+    padding: 0 80px 80px;
+  }
+}
+
