@@ -3,6 +3,7 @@
 
 .contact__container {
   position: relative;
+  margin-top: 40px;
   background-color: v.$primaryDark2;
   display: grid;
   grid-template-columns: 1fr;
@@ -54,6 +55,7 @@
 
   @include m.lgMinBreakPoint {
     border-right: 11px solid v.$primaryDark3;
+    border-bottom: none;
     padding: 0 80px 80px;
   }
 
@@ -86,7 +88,6 @@
 }
 
 .contact__form-container {
-
   padding: 20px 20px;
 
   @include m.lgMinBreakPoint {

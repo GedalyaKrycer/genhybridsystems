@@ -3,6 +3,7 @@ import './contactContainerStyles.scss';
 import logo from '../../../assets/ghs-logo-shadow.png';
 import SectionLayout from "../../ui/SectionLayout/SectionLayout";
 import SocialMediaIcon from "../../ui/SocialMediaIcon/SocialMediaIcon";
+import ContactForm from "../ContactForm/ContactForm";
 
 
 
@@ -11,10 +12,7 @@ const ContactContainer = props => {
 
 
     return (
-
-
-
-        <SectionLayout customClass="contact__container">
+        <SectionLayout customClass="contact__container" id="connect">
             <img src={logo} alt="Gen Hybrid Systems Logo" className="contact__logo"/>
             <div className="contact__connect-container">
                 <h2 className="contact__title contact__title--left">Connect <span className="g__text-emphasis">with us</span></h2>
@@ -68,7 +66,7 @@ const ContactContainer = props => {
             </div>
             <div className="contact__form-container">
                 <h2 className="contact__title contact__title--right">Contact <span className="g__text-emphasis">our team</span></h2>
-
+                <ContactForm />
             </div>
 
         </SectionLayout>
