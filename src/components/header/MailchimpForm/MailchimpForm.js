@@ -111,7 +111,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                 /> : <InputField
                     label="subscribe"
                     type="submit"
-                    formValues={[firstName, lastName, email]}
+                    formValues={[email, firstName, lastName]}
                 />
 
             }
