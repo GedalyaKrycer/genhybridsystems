@@ -18,7 +18,7 @@ const CrisisContainer = props => {
             name: 'tab1',
             title: 'Inadequate higher education',
             description: 'Lack of space often means that only junior secondary education is offered.',
-            ctaLink: 'https://en.wikipedia.org/wiki/Sierra_Leone',
+            ctaLink: 'https://schoolingforlife.net/sierra-leone/#:~:text=Education&text=The%20education%20norm%20is%20to,in%20Sierra%20Leone%20is%20illiterate',
             ctaText: "learn more",
             image: crisisImg1
         },
@@ -26,31 +26,31 @@ const CrisisContainer = props => {
             name: 'tab2',
             title: 'Walking 5-8 miles',
             description: 'Many students have to walk up to 8 miles to get to school.',
-            ctaLink: 'https://en.wikipedia.org/wiki/Sierra_Leone',
+            ctaLink: 'https://www.lbbonline.com/news/new-website-scrolls-nine-miles-to-show-how-far-kids-in-sierra-leone-walk-to-school',
             ctaText: "learn more",
             image: crisisImg2
         },
         {
             name: 'tab3',
             title: '“Love” trades for rides',
-            description: 'Young girls are forced to trade their bodies for rides to school.',
-            ctaLink: 'https://en.wikipedia.org/wiki/Sierra_Leone',
+            description: 'Young girls are forced to trade their bodies for rides and to pay for school.',
+            ctaLink: 'https://www.deccanchronicle.com/world/africa/190416/sierra-leone-girls-as-young-as-14-forced-to-sell-body-to-fund-schooling.html',
             ctaText: "learn more",
             image: crisisImg3
         },
         {
             name: 'tab4',
-            title: 'Lack of supervision',
-            description: 'Students forced to live unsupervised in order to be closer to a school, are more susceptible to criminal behavior.',
-            ctaLink: 'https://en.wikipedia.org/wiki/Sierra_Leone',
+            title: 'Education disrupted by war',
+            description: 'Children who were Civil War victims are often forced to rely on criminal behavior to survive.',
+            ctaLink: 'https://www.thenewhumanitarian.org/fr/node/225020',
             ctaText: "learn more",
             image: crisisImg4
         },
         {
             name: 'tab5',
             title: 'Minimal computer access',
-            description: 'Students often have introductory technology classes without access to a computer. ',
-            ctaLink: 'https://en.wikipedia.org/wiki/Sierra_Leone',
+            description: 'Students often have introductory technology classes without access to a computer.',
+            ctaLink: 'https://firstmonday.org/ojs/index.php/fm/article/view/940/862#:~:text=Computers%20are%20not%20widely%20available,access%20widely%20in%20educational%20institutions',
             ctaText: "learn more",
             image: crisisImg5
         },
