@@ -8,6 +8,7 @@
   right: 20px;
   display: block;
   margin: 0 auto;
+  z-index: 50;
 
   @include m.smMinBreakPoint {
     display: none;
