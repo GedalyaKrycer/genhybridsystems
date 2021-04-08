@@ -11,6 +11,7 @@ import AboutHeroBanner from "./components/about/AboutHeroBanner/AboutHeroBanner"
 import AboutContainer from "./components/about/AboutContainer/AboutContainer";
 import VideosContainer from "./components/videos/VideosContainer/VideosContainer";
 import ContactContainer from "./components/contact/ContactContainer/ContactContainer";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
                   <VideosContainer />
                   <ContactContainer />
               </main>
+              <Footer />
               <Modal><MailchimpForm /></Modal>
           </GHSProvider>
       </>
