@@ -3,6 +3,7 @@
 
 
 .about__container {
+  padding-bottom: 40px;
   @include m.smMinBreakPoint {
     padding-right: 15px;
   }
