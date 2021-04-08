@@ -8,7 +8,6 @@ const VideoCard = props => {
     const formatedDate = `${rawDate.getMonth() + 1}/${rawDate.getDay()}/${rawDate.getFullYear()}`;
 
     let title = props.title.split("");
-    console.log(title)
 
     if (title.length > 45) {
         title = title.splice(0, 44).join("") + '...';

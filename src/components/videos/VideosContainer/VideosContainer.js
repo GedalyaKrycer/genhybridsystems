@@ -46,7 +46,7 @@ const VideosContainer = props => {
 
 
     return (
-        <SectionLayout customClass="video__section-container" >
+        <SectionLayout customClass="video__section-container" id="videos">
             <div className="video__content-layout">
                 <div className="video__content">
                     <h2 className="video__title">Follow our <span className="g__text-emphasis">progress</span> on YouTube</h2>
