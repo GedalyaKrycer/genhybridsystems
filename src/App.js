@@ -10,6 +10,7 @@ import CrisisContainer from "./components/crisis/CrisisContainer/CrisisContainer
 import AboutHeroBanner from "./components/about/AboutHeroBanner/AboutHeroBanner";
 import AboutContainer from "./components/about/AboutContainer/AboutContainer";
 import VideosContainer from "./components/videos/VideosContainer/VideosContainer";
+import ContactContainer from "./components/contact/ContactContainer/ContactContainer";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
                   <AboutHeroBanner />
                   <AboutContainer />
                   <VideosContainer />
+                  <ContactContainer />
               </main>
               <Modal><MailchimpForm /></Modal>
           </GHSProvider>
