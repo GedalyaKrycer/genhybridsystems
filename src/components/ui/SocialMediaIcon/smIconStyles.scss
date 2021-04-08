@@ -13,23 +13,19 @@
   }
 
   img {
-    transition: fill 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   p {
     margin: 0;
-    padding-left: 8px;
+    padding-left: 10px;
     display: inline-block;
     color: v.$highlight1;
     transition: color 0.3s ease-in-out;
-
-    @include m.smMinBreakPoint {
-      color: v.$secondary2
-    }
   }
 
   &:hover p {
-    color: v.$highlight1;
+    color: v.$primary;
   }
 }
 
@@ -68,18 +64,20 @@
 
 //Contact Icons
 .social-link--contact {
+  margin-bottom: 25px;
 
-  .social-svg--contact {
-    fill: v.$highlight1;
-    transition: fill 0.3s ease-in-out;
-
-    @include m.smMinBreakPoint {
-      color: v.$secondary2
-    }
+  @include m.lgMinBreakPoint {
+    justify-content: start;
   }
 
-  &:hover .social-svg--contact {
-    fill: v.$highlight1;
+  &:hover {
+    transform: scale(1);
+  }
+
+  img {
+    width: 22px;
+    height: auto;
+    transition: 0.3s ease-in-out;
   }
 
 }
