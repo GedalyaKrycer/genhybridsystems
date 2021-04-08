@@ -50,7 +50,7 @@ const VideosContainer = props => {
             <div className="video__content-layout">
                 <div className="video__content">
                     <h2 className="video__title">Follow our <span className="g__text-emphasis">progress</span> on YouTube</h2>
-                    <p className="body-text--large">Check back here for the latest videos or watch all of them on our channel.</p>
+                    <p>Check back here for the latest videos or watch all of them on our channel.</p>
                     <a
                         href="https://www.youtube.com/channel/UCd_vGMt4KBH97jnskSVXBwA"
                         className="primaryBtn primaryBtn--normal primaryBtn--grid video__cta"

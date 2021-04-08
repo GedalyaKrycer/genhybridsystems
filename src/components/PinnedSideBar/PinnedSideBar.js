@@ -46,7 +46,7 @@ const PinnedSideBar = props => {
                             disable={false}
                         />
                         <SocialMediaIcon
-                            type={"snapchat"}
+                            type={"linkedin"}
                             location={"sidebar"}
                             theme={"dark"}
                             disable={false}

@@ -31,7 +31,7 @@ const MobileSocialMediaBar = props => {
                     disable={false}
                 />
                 <SocialMediaIcon
-                    type={"snapchat"}
+                    type={"linkedin"}
                     location={"mobile-hero"}
                     theme={"light"}
                     disable={false}

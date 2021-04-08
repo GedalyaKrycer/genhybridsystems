@@ -100,7 +100,7 @@ const Navbar = props => {
                 />
 
                 <SocialMediaIcon
-                    type={"snapchat"}
+                    type={"linkedin"}
                     location={"mobile-nav"}
                     theme="dark"
                     disable={false}

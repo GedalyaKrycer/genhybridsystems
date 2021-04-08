@@ -8,8 +8,8 @@ import ticktockDark from '../../../assets/social-icons/ticktock-dark.svg';
 import ticktockLight from '../../../assets/social-icons/ticktock-light.svg';
 import instagramDark from '../../../assets/social-icons/instagram-dark.svg';
 import instagramLight from '../../../assets/social-icons/instagram-light.svg';
-import snapchatDark from '../../../assets/social-icons/snapchat-dark.svg';
-import snapchatLight from '../../../assets/social-icons/snapchat-light.svg';
+import linkedinDark from '../../../assets/social-icons/linkedin-dark.svg';
+import linkedinLight from '../../../assets/social-icons/linkedin-light.svg';
 import twitterDark from '../../../assets/social-icons/twitter-dark.svg';
 import twitterLight from '../../../assets/social-icons/twitter-light.svg';
 
@@ -48,12 +48,12 @@ const SocialMediaIcon = props => {
             },
             url: "https://www.instagram.com/"
         },
-        snapchat: {
+        linkedin: {
             theme: {
-                dark: snapchatDark,
-                light: snapchatLight
+                dark: linkedinDark,
+                light: linkedinLight
             },
-            url: "https://www.snapchat.com/"
+            url: "https://www.linkedin.com/"
         },
         twitter: {
             theme: {
