@@ -5,6 +5,7 @@ import aboutContentImage1 from '../../../assets/about-content-img-1.jpg';
 import aboutContentImage2 from '../../../assets/about-content-img-2.jpg';
 import MilestoneCard from "../MilestoneCard/MilestoneCard";
 import logo from '../../../assets/ghs-ribbon-logo.svg';
+import developAfricaLogo from '../../../assets/develop-africa-logo.jpg';
 
 const AboutContainer = props => {
 
@@ -73,12 +74,14 @@ const AboutContainer = props => {
                 <h3 className="about__content-subtitle">Our Partners</h3>
                 <div className="about__partners">
                     <div className="about__partner-container">
-                        <img
-                            src={logo}
-                            alt="some partner logo"
-                            className="about__partner-img"
-                        />
-                        <p className="about__partner-text">Lorem ipsum dolor sit amet, consect etur adipiscing elit. Accumsan varius vulputate at leo ut integer</p>
+                        <a href="https://www.developafrica.org/" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src={developAfricaLogo}
+                                alt="some partner logo"
+                                className="about__partner-img"
+                            />
+                        </a>
+                        <p className="about__partner-text">Develop Africa strategically empowers lives in Africa by providing educational opportunities and resources.</p>
                     </div>
                     <div className="about__partner-container">
                         <img
