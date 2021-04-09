@@ -10,8 +10,10 @@ const ContactForm = props => {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
-    const [formSubmitted, setFormSubmitted] = useState(false)
+    // const [formSubmitted, setFormSubmitted] = useState(false)
 
+
+    const formSubmitted = false;
 
     // const handleSubmit = (e) => {
     //     e.preventDefault();
