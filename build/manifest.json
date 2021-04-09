@@ -1,0 +1,35 @@
+{
+  "short_name": "Gen Hybrid",
+  "name": "Gen Hybrid Systems",
+  "icons": [
+    {
+      "src": "ghs-favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "ghs192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "ghs256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "ghs384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "ghs512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
