@@ -67,16 +67,11 @@ const CrisisContainer = props => {
     return (
         <SectionLayout id="crisis" customClass="crisis__container">
             {
-                tabContent.map((img, i) => {
-                    if(img.name === currentTab) {
-                        return <TabImage
+                tabContent.map((img, i) => img.name === currentTab ?   <TabImage
                             key={img.name + (i * 3)}
                             active={currentTab}
                             image={img.image}
-                        />
-                    }
-
-                })
+                        /> : null)
             }
             <div className="crisis__content-column">
                 <h2 className="crisis__headline">There is a <span className="g__text-emphasis">crisis </span>in Sierra Leone </h2>
