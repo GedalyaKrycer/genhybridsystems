@@ -12,6 +12,8 @@
   text-align: center;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 
   &--normal {
     padding: 8px 18px;

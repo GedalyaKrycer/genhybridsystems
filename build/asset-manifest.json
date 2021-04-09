@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2832c6ba.chunk.css",
-    "main.js": "/static/js/main.8a90ad9e.chunk.js",
-    "main.js.map": "/static/js/main.8a90ad9e.chunk.js.map",
+    "main.css": "/static/css/main.dcd8682e.chunk.css",
+    "main.js": "/static/js/main.db9898d5.chunk.js",
+    "main.js.map": "/static/js/main.db9898d5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ac5d397f.js",
     "runtime-main.js.map": "/static/js/runtime-main.ac5d397f.js.map",
     "static/js/2.5a4c782c.chunk.js": "/static/js/2.5a4c782c.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.40851c3f.chunk.js": "/static/js/3.40851c3f.chunk.js",
     "static/js/3.40851c3f.chunk.js.map": "/static/js/3.40851c3f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2832c6ba.chunk.css.map": "/static/css/main.2832c6ba.chunk.css.map",
+    "static/css/main.dcd8682e.chunk.css.map": "/static/css/main.dcd8682e.chunk.css.map",
     "static/js/2.5a4c782c.chunk.js.LICENSE.txt": "/static/js/2.5a4c782c.chunk.js.LICENSE.txt",
-    "static/media/about-content-img-1.831155e9.jpg": "/static/media/about-content-img-1.831155e9.jpg",
-    "static/media/about-content-img-2.2137a229.jpg": "/static/media/about-content-img-2.2137a229.jpg",
+    "static/media/about-content-img-1.222c8082.jpg": "/static/media/about-content-img-1.222c8082.jpg",
+    "static/media/about-content-img-2.6cf58ad8.jpg": "/static/media/about-content-img-2.6cf58ad8.jpg",
     "static/media/aboutHeroBannerStyles.scss": "/static/media/about-hero-banner.3622b631.jpg",
     "static/media/circl-arrow-up-icon.d92727c9.svg": "/static/media/circl-arrow-up-icon.d92727c9.svg",
     "static/media/crowded-class.d158df76.jpg": "/static/media/crowded-class.d158df76.jpg",
-    "static/media/develop-africa-logo.d804b6c7.jpg": "/static/media/develop-africa-logo.d804b6c7.jpg",
+    "static/media/develop-africa-logo.d95824c4.jpg": "/static/media/develop-africa-logo.d95824c4.jpg",
     "static/media/facebook-dark.a9d0f70a.svg": "/static/media/facebook-dark.a9d0f70a.svg",
     "static/media/facebook-light.e0b8c161.svg": "/static/media/facebook-light.e0b8c161.svg",
     "static/media/ghs-logo-shadow.3260ab40.png": "/static/media/ghs-logo-shadow.3260ab40.png",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.ac5d397f.js",
     "static/js/2.5a4c782c.chunk.js",
-    "static/css/main.2832c6ba.chunk.css",
-    "static/js/main.8a90ad9e.chunk.js"
+    "static/css/main.dcd8682e.chunk.css",
+    "static/js/main.db9898d5.chunk.js"
   ]
 }
