@@ -7,18 +7,14 @@ const InputField = props => {
     const validateInput = values => {
 
         if (values.some(f => f === "") || values[0].indexOf("@") === -1) {
-            console.log("True was hit")
             return true
         } else {
-            console.log("FALSE was hit")
             return false
         }
 
 
     }
     if (props.type === "submit") {
-        console.log("props.formValues")
-        console.log(props.formValues[0].indexOf("@") === -1)
         return (
             <input
                 className='primaryBtn primaryBtn--big g__justify-self-center'

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './contactContainerStyles.scss';
 import logo from '../../../assets/ghs-logo-shadow.png';
 import SectionLayout from "../../ui/SectionLayout/SectionLayout";
