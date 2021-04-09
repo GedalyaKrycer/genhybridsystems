@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './CrisisContainerStyle.scss';
 import SectionLayout from "../../ui/SectionLayout/SectionLayout";
 import crisisImg1 from "../../../assets/crisis-images/crowded-class.jpg";
@@ -8,10 +8,33 @@ import crisisImg4 from "../../../assets/crisis-images/left-alone.jpg";
 import crisisImg5 from "../../../assets/crisis-images/minimal-computer-access.jpg";
 import CrisisTab from "../CrisisTab/CrisisTab";
 import TabImage from "../TabImage/TabImage";
+import useWindowDimensions from "../../../utils/useWindowDimensions";
 
 const CrisisContainer = props => {
 
+    const {width} = useWindowDimensions();
+    const [offsetY, setOffsetY] = useState(0);
     const [currentTab, setCurrentTab] = useState('tab1');
+    const [desktopView, setDesktopView] = useState(true);
+
+    useEffect(() => {
+        if(width > 676) {
+            setDesktopView(true);
+        } else {
+            setDesktopView(false);
+        }
+    }, [width])
+
+
+
+
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [])
 
     const tabContent = [
         {
@@ -66,14 +89,22 @@ const CrisisContainer = props => {
 
     return (
         <SectionLayout id="crisis" customClass="crisis__container">
-            {
-                tabContent.map((img, i) => img.name === currentTab ?   <TabImage
-                            key={img.name + (i * 3)}
-                            active={currentTab}
-                            image={img.image}
-                        /> : null)
-            }
-            <div className="crisis__content-column">
+            <div
+                style={{transform: desktopView && `translateY(${offsetY * 0.1}px)`}}
+                className="crisis__image-container"
+            >
+                {
+                    tabContent.map((img, i) => img.name === currentTab ?   <TabImage
+                                key={img.name + (i * 3)}
+                                active={currentTab}
+                                image={img.image}
+                            /> : null)
+                }
+            </div>
+            <div
+                className="crisis__content-column"
+                style={{transform: desktopView && `translateY(${offsetY * -0.01}px)`}}
+            >
                 <h2 className="crisis__headline">There is a <span className="g__text-emphasis">crisis </span>in Sierra Leone </h2>
                 <ul className="crisis__tab-container">
                     {

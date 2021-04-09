@@ -14,6 +14,15 @@
   }
 }
 
+.crisis__image-container {
+
+  @include m.mdMinBreakPoint {
+    width: 100%;
+  }
+
+
+}
+
 .crisis__content-column {
   max-width: 415px;
   display: flex;
