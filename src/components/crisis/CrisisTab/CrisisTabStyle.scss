@@ -74,7 +74,7 @@
 
 .crisis-tab__cta {
   display: flex;
-  width: 130px;
+  width: max-content;
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
@@ -95,6 +95,7 @@
   }
 
   svg {
+    margin-left: 8px;
     fill: v.$highlight1;
     transition: 0.3s ease-in-out;
   }

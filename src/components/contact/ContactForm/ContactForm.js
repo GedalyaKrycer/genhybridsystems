@@ -12,9 +12,6 @@ const ContactForm = props => {
     const [message, setMessage] = useState('');
 
 
-    const formSubmitted = false;
-
-
     return (
 
         <div className="mc__form-container">
