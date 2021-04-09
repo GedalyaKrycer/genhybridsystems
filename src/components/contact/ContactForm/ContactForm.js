@@ -10,44 +10,22 @@ const ContactForm = props => {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
-    // const [formSubmitted, setFormSubmitted] = useState(false)
 
 
     const formSubmitted = false;
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //
-    //
-    //     setFormSubmitted(true);
-    //     clearFields();
-    // };
-
-
-    // const clearFields = () => {
-    //     setName('');
-    //     setEmail('');
-    //     setMessage('');
-    // }
 
     return (
 
         <div className="mc__form-container">
 
-            {formSubmitted ? (
-                <div className="contact-form__confirmation-container">
-                    <h3>Thank you for contacting us!</h3>
-                    <p>We will review your message and email you back as soon as we can!</p>
-                </div>
-            ) : (
                 <form
                     className="mc__form"
-                    // onSubmit={(e) => handleSubmit(e)}
                     name="ghs-contact-form"
                     method="post"
                 >
                     <div className="mc__field-container">
-                        <input type="hidden" name="form-name" value="ghs-contact-form" />
+                        <input type="hidden" name="form-name" value="ghs-contact-form"/>
                         <InputField
                             label="Name"
                             onChangeHandler={setName}
@@ -87,8 +65,6 @@ const ContactForm = props => {
                         formValues={[email, name, message]}
                     />
                 </form>
-            )}
-
         </div>
     )
 }
