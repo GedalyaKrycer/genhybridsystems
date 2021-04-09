@@ -22,7 +22,7 @@ const ContactContainer = props => {
                 </div>
                 <div className="contact__contact-group">
                     <h3>email</h3>
-                    <a href="mailto:gedhybridsystems@gmail.com">gedhybridsystems@gmail.com</a>
+                    <a href="mailto:info@genhybridsystems.com">info@genhybridsystems.com</a>
                 </div>
                 <div className="contact__contact-group">
                     <h3>follow on social</h3>
