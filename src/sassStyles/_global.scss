@@ -18,6 +18,12 @@ body {
   background-color: v.$primaryDark3;
 }
 
+input[type=text], input[type=button] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
 .g__justify-self-center {
   justify-self: center;
 }
+
