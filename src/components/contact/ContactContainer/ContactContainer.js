@@ -18,7 +18,7 @@ const ContactContainer = props => {
                 <h2 className="contact__title contact__title--left">Connect <span className="g__text-emphasis">with us</span></h2>
                 <div className="contact__contact-group">
                     <h3>phone</h3>
-                    <a href="tel:123456790">(123) 456–7890</a>
+                    <a href="tel:7183107876">(718) 310–7876</a>
                 </div>
                 <div className="contact__contact-group">
                     <h3>email</h3>
