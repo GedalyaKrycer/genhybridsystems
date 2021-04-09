@@ -15,6 +15,8 @@ const ContactForm = props => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+
         setFormSubmitted(true);
         clearFields();
     };
@@ -38,10 +40,9 @@ const ContactForm = props => {
             ) : (
                 <form
                     className="mc__form"
-                    onSubmit={(e) => handleSubmit(e)}
-                    name={"ghs-contact-form"}
-                    method={"POST"}
-                    data-netlify="true"
+                    // onSubmit={(e) => handleSubmit(e)}
+                    name="ghs-contact-form"
+                    method="post"
                 >
                     <div className="mc__field-container">
                         <input type="hidden" name="form-name" value="ghs-contact-form" />
@@ -52,7 +53,7 @@ const ContactForm = props => {
                             value={name}
                             placeholder="Jane Smith"
                             isRequired
-                            name={"name"}
+                            name="name"
                         />
 
                         <InputField
@@ -62,7 +63,7 @@ const ContactForm = props => {
                             value={email}
                             placeholder="your@email.com"
                             isRequired
-                            name={"email"}
+                            name="email"
                         />
 
                         <InputField
@@ -72,7 +73,7 @@ const ContactForm = props => {
                             value={message}
                             placeholder="How can we help..."
                             isRequired
-                            name={"message"}
+                            name="message"
                         />
 
                     </div>
