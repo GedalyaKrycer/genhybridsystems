@@ -13,20 +13,20 @@ const ContactForm = props => {
     const [formSubmitted, setFormSubmitted] = useState(false)
 
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //
+    //
+    //     setFormSubmitted(true);
+    //     clearFields();
+    // };
 
 
-        setFormSubmitted(true);
-        clearFields();
-    };
-
-
-    const clearFields = () => {
-        setName('');
-        setEmail('');
-        setMessage('');
-    }
+    // const clearFields = () => {
+    //     setName('');
+    //     setEmail('');
+    //     setMessage('');
+    // }
 
     return (
 
