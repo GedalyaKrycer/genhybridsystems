@@ -4,11 +4,12 @@
 
 .video__section-container {
   border-top: 20px solid v.$primaryDark2;
-  margin-top: 120px;
+  margin-top: 10px;
   padding: 60px 0;
 
   @include m.mdMinBreakPoint {
     padding: 160px 0;
+    margin-top: 120px;
   }
 }
 
