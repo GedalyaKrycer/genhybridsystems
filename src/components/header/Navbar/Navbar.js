@@ -86,7 +86,7 @@ const Navbar = props => {
                 />
 
                 <SocialMediaIcon
-                    type={"ticktock"}
+                    type={"facebook"}
                     location={"mobile-nav"}
                     theme="dark"
                     disable={false}
@@ -99,26 +99,28 @@ const Navbar = props => {
                     disable={false}
                 />
 
-                <SocialMediaIcon
-                    type={"linkedin"}
-                    location={"mobile-nav"}
-                    theme="dark"
-                    disable={false}
-                />
+                {/*<SocialMediaIcon*/}
+                {/*    type={"ticktock"}*/}
+                {/*    location={"mobile-nav"}*/}
+                {/*    theme="dark"*/}
+                {/*    disable={false}*/}
+                {/*/>*/}
 
-                <SocialMediaIcon
-                    type={"twitter"}
-                    location={"mobile-nav"}
-                    theme="dark"
-                    disable={false}
-                />
+                {/*<SocialMediaIcon*/}
+                {/*    type={"linkedin"}*/}
+                {/*    location={"mobile-nav"}*/}
+                {/*    theme="dark"*/}
+                {/*    disable={false}*/}
+                {/*/>*/}
 
-                <SocialMediaIcon
-                    type={"facebook"}
-                    location={"mobile-nav"}
-                    theme="dark"
-                    disable={false}
-                />
+                {/*<SocialMediaIcon*/}
+                {/*    type={"twitter"}*/}
+                {/*    location={"mobile-nav"}*/}
+                {/*    theme="dark"*/}
+                {/*    disable={false}*/}
+                {/*/>*/}
+
+
 
             </div>
 

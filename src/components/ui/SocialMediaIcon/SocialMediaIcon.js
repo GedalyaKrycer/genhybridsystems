@@ -24,7 +24,7 @@ const SocialMediaIcon = props => {
                 dark: facebookDark,
                 light: facebookLight
             },
-            url: "https://www.facebook.com/"
+            url: "https://www.facebook.com/GEN-Hybrid-Systems-109137891288145"
         },
         youtube: {
             theme: {
@@ -34,19 +34,19 @@ const SocialMediaIcon = props => {
             url: "https://www.youtube.com/channel/UCd_vGMt4KBH97jnskSVXBwA"
 
         },
+        instagram: {
+            theme: {
+                dark: instagramDark,
+                light: instagramLight
+            },
+            url: "https://www.instagram.com/genhybridsystems/"
+        },
         ticktock: {
             theme: {
                 dark: ticktockDark,
                 light: ticktockLight
             },
             url: "https://apps.apple.com/ro/app/tiktok/id835599320"
-        },
-        instagram: {
-            theme: {
-                dark: instagramDark,
-                light: instagramLight
-            },
-            url: "https://www.instagram.com/"
         },
         linkedin: {
             theme: {

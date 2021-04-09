@@ -30,24 +30,24 @@ const MobileSocialMediaBar = props => {
                     theme={"light"}
                     disable={false}
                 />
-                <SocialMediaIcon
-                    type={"linkedin"}
-                    location={"mobile-hero"}
-                    theme={"light"}
-                    disable={false}
-                />
-                <SocialMediaIcon
-                    type={"twitter"}
-                    location={"mobile-hero"}
-                    theme={"light"}
-                    disable={false}
-                />
-                <SocialMediaIcon
-                    type={"ticktock"}
-                    location={"mobile-hero"}
-                    theme={"light"}
-                    disable={false}
-                />
+                {/*<SocialMediaIcon*/}
+                {/*    type={"linkedin"}*/}
+                {/*    location={"mobile-hero"}*/}
+                {/*    theme={"light"}*/}
+                {/*    disable={false}*/}
+                {/*/>*/}
+                {/*<SocialMediaIcon*/}
+                {/*    type={"twitter"}*/}
+                {/*    location={"mobile-hero"}*/}
+                {/*    theme={"light"}*/}
+                {/*    disable={false}*/}
+                {/*/>*/}
+                {/*<SocialMediaIcon*/}
+                {/*    type={"ticktock"}*/}
+                {/*    location={"mobile-hero"}*/}
+                {/*    theme={"light"}*/}
+                {/*    disable={false}*/}
+                {/*/>*/}
 
                 <div className="smbar__spacer"></div>
 

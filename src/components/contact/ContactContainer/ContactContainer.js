@@ -44,24 +44,24 @@ const ContactContainer = props => {
                         theme={"light"}
                         disable={false}
                     />
-                    <SocialMediaIcon
-                        type={"linkedin"}
-                        location={"contact"}
-                        theme={"light"}
-                        disable={false}
-                    />
-                    <SocialMediaIcon
-                        type={"twitter"}
-                        location={"contact"}
-                        theme={"light"}
-                        disable={false}
-                    />
-                    <SocialMediaIcon
-                        type={"ticktock"}
-                        location={"contact"}
-                        theme={"light"}
-                        disable={false}
-                    />
+                    {/*<SocialMediaIcon*/}
+                    {/*    type={"linkedin"}*/}
+                    {/*    location={"contact"}*/}
+                    {/*    theme={"light"}*/}
+                    {/*    disable={false}*/}
+                    {/*/>*/}
+                    {/*<SocialMediaIcon*/}
+                    {/*    type={"twitter"}*/}
+                    {/*    location={"contact"}*/}
+                    {/*    theme={"light"}*/}
+                    {/*    disable={false}*/}
+                    {/*/>*/}
+                    {/*<SocialMediaIcon*/}
+                    {/*    type={"ticktock"}*/}
+                    {/*    location={"contact"}*/}
+                    {/*    theme={"light"}*/}
+                    {/*    disable={false}*/}
+                    {/*/>*/}
                 </div>
             </div>
             <div className="contact__form-container">

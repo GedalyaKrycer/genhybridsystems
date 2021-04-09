@@ -45,24 +45,24 @@ const PinnedSideBar = props => {
                             theme={"dark"}
                             disable={false}
                         />
-                        <SocialMediaIcon
-                            type={"linkedin"}
-                            location={"sidebar"}
-                            theme={"dark"}
-                            disable={false}
-                        />
-                        <SocialMediaIcon
-                            type={"twitter"}
-                            location={"sidebar"}
-                            theme={"dark"}
-                            disable={false}
-                        />
-                        <SocialMediaIcon
-                            type={"ticktock"}
-                            location={"sidebar"}
-                            theme={"dark"}
-                            disable={false}
-                        />
+                        {/*<SocialMediaIcon*/}
+                        {/*    type={"linkedin"}*/}
+                        {/*    location={"sidebar"}*/}
+                        {/*    theme={"dark"}*/}
+                        {/*    disable={false}*/}
+                        {/*/>*/}
+                        {/*<SocialMediaIcon*/}
+                        {/*    type={"twitter"}*/}
+                        {/*    location={"sidebar"}*/}
+                        {/*    theme={"dark"}*/}
+                        {/*    disable={false}*/}
+                        {/*/>*/}
+                        {/*<SocialMediaIcon*/}
+                        {/*    type={"ticktock"}*/}
+                        {/*    location={"sidebar"}*/}
+                        {/*    theme={"dark"}*/}
+                        {/*    disable={false}*/}
+                        {/*/>*/}
                     </div>
                 </div>
             </div>
