@@ -13,8 +13,7 @@ const VideosContainer = props => {
         axios.get(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLgCCKnZxJXawA8kw1rBqfq1B6vNZvU7fB&maxResults=6&key=${process.env.REACT_APP_YOUTUBE_KEY}`)
             .then(res => {
                 setLoading(true);
-                setVideoData(res.data.items.reverse());
-
+                setVideoData(res.data.items);
             })
             .then(res => {
                 setLoading(false);
@@ -31,14 +30,16 @@ const VideosContainer = props => {
         videoContent = <p>Loading...</p>
     } else if (!loading) {
         videoContent = videoData.map(video => {
+
+            const validatedVideo = video.snippet.thumbnails.standard.url ? video.snippet.thumbnails.standard.url : null;
+
              return (
                  <VideoCard
                      key={video.snippet.resourceId.videoId}
                      videoId={video.snippet.resourceId.videoId}
                      date={video.snippet.publishedAt}
                      title={video.snippet.title}
-                     height={video.snippet.thumbnails.standard.height}
-                     image={video.snippet.thumbnails.standard.url}
+                     image={validatedVideo}
                  />
             )
         })
