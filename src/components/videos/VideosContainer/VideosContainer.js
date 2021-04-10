@@ -10,10 +10,10 @@ const VideosContainer = props => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLgCCKnZxJXawA8kw1rBqfq1B6vNZvU7fB&maxResults=4&key=${process.env.REACT_APP_YOUTUBE_KEY}`)
+        axios.get(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLgCCKnZxJXawA8kw1rBqfq1B6vNZvU7fB&maxResults=6&key=${process.env.REACT_APP_YOUTUBE_KEY}`)
             .then(res => {
                 setLoading(true);
-                setVideoData(res.data.items);
+                setVideoData(res.data.items.reverse());
 
             })
             .then(res => {
