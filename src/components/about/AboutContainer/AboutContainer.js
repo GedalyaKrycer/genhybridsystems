@@ -83,14 +83,16 @@ const AboutContainer = props => {
                         </a>
                         <p className="about__partner-text">Develop Africa strategically empowers lives in Africa by providing educational opportunities and resources.</p>
                     </div>
-                    <div className="about__partner-container">
-                        <img
-                            src={logo}
-                            alt="some partner logo"
-                            className="about__partner-img"
-                        />
-                        <p className="about__partner-text">Lorem ipsum dolor sit amet, consect etur adipiscing elit. Accumsan varius vulputate at leo ut integer</p>
-                    </div>
+                    {/*<div className="about__partner-container">*/}
+                    {/*    <a href="https://www.developafrica.org/" target="_blank" rel="noopener noreferrer">*/}
+                    {/*        <img*/}
+                    {/*            src={logo}*/}
+                    {/*            alt="some partner logo"*/}
+                    {/*            className="about__partner-img"*/}
+                    {/*        />*/}
+                    {/*    </a>*/}
+                    {/*    <p className="about__partner-text">Lorem ipsum dolor sit amet, consect etur adipiscing elit. Accumsan varius vulputate at leo ut integer</p>*/}
+                    {/*</div>*/}
                 </div>
             </div>
 
