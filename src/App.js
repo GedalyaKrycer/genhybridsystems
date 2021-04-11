@@ -13,6 +13,11 @@ import VideosContainer from "./components/videos/VideosContainer/VideosContainer
 import ContactContainer from "./components/contact/ContactContainer/ContactContainer";
 import Footer from "./components/Footer/Footer";
 
+
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-986LL3R354');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 const App = () => {
   return (
       <>
