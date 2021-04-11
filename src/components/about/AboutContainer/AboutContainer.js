@@ -4,7 +4,6 @@ import SectionLayout from "../../ui/SectionLayout/SectionLayout";
 import aboutContentImage1 from '../../../assets/about-content-img-1.jpg';
 import aboutContentImage2 from '../../../assets/about-content-img-2.jpg';
 import MilestoneCard from "../MilestoneCard/MilestoneCard";
-import logo from '../../../assets/ghs-ribbon-logo.svg';
 import developAfricaLogo from '../../../assets/develop-africa-logo.jpg';
 
 const AboutContainer = props => {
