@@ -9,7 +9,7 @@ const Footer = props => {
 
     return(
         <footer className="footer">
-            <p>Copyright Gardner Education Network {year}   •   <a href="https://gedalyakrycer.com/" target="_blank" rel="noreferrer noopener">built by Gedalya Krycer</a></p>
+            <p>Copyright {year} Gardner Education Network   •   <a href="https://gedalyakrycer.com/" target="_blank" rel="noreferrer noopener">built by Gedalya Krycer</a></p>
         </footer>
     );
 
