@@ -69,10 +69,10 @@ const Navbar = props => {
                 className={`navbar__links ${openMenu || desktopView ? null : "hidden"}`}
                 id="menu"
             >
-                <li><a href="#crisis">crisis</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#videos">videos</a></li>
-                <li><a href="#connect">connect</a></li>
+                <li><a href="#crisis" onClick={() => setOpenMenu(false)}>crisis</a></li>
+                <li><a href="#about" onClick={() => setOpenMenu(false)}>about</a></li>
+                <li><a href="#videos" onClick={() => setOpenMenu(false)}>videos</a></li>
+                <li><a href="#connect" onClick={() => setOpenMenu(false)}>connect</a></li>
             </ul>
 
             <div
